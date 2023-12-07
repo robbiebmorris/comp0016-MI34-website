@@ -20,7 +20,7 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/docs/intro">
-            MI Bluetooth Controller Tutorial
+            Get Started
           </Link>
         </div>
       </div>

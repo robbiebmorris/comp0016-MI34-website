@@ -131,7 +131,7 @@ const config = {
             title: 'Site Info',
           },
           {
-            title: 'Quick Navigations',
+            title: 'Quick Navigation',
             items: [
               {
                 label: 'Requirements',

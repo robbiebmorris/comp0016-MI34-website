@@ -1,6 +1,7 @@
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
+import React from 'react';
 
 const FeatureList = [
   {
@@ -56,7 +57,15 @@ export default function HomepageFeatures() {
       <div className="container">
         <div className="row">
           {FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
+            <React.Fragment key={idx}>
+              {props.Svg ? (
+                // Render existing features
+                <Feature {...props} />
+              ) : (
+                // Render new hardcoded image with description
+                props.component
+              )}
+            </React.Fragment>
           ))}
         </div>
       </div>
