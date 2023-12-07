@@ -8,28 +8,29 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        MI Bluetooth Controller was designed with ease of use in mind. It's simple,
+        yet effectice UI is designed to be accessible for everyone.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Powered by Motion Input',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        MI Bluetooth Controller uses UCL's Motion Input technology brought
+        exclusively to Android. Control your device using your movements alone.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Seamless across Platforms',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Designed to operate on various platforms, including Windows, MacOS, iPadOS,
+        Android and AndroidTV. Easily connect without any additional 
+        software.
       </>
     ),
   },

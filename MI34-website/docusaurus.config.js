@@ -8,8 +8,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'Motion Input Bluetooth Controller',
+  tagline: 'Bring MotionInput to Android and turn your device into a smart bluetooth controller.',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -20,8 +20,8 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'UCL Team 23', // Usually your GitHub org/user name.
+  projectName: 'MotionInput Bluetooth Controller', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -41,17 +41,9 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -66,7 +58,7 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'My Site',
+        title: 'MotionInput Bluetooth Controller',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
@@ -74,13 +66,59 @@ const config = {
         items: [
           {
             type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            sidebarId: 'requirementsSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Requirements',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            type: 'docSidebar',
+            sidebarId: 'algorithmsSidebar',
+            position: 'left',
+            label: 'Algorithms',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'uiDesignSidebar',
+            position: 'left',
+            label: 'UI Design',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'systemSidebar',
+            position: 'left',
+            label: 'System Design',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'implementationSidebar',
+            position: 'left',
+            label: 'Implementation',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'testingSidebar',
+            position: 'left',
+            label: 'Testing',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'evaluationSidebar',
+            position: 'left',
+            label: 'Evaluation',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'appendicesSidebar',
+            position: 'left',
+            label: 'Appendices',
+          },
+          {
+            to: '/blog',
+            label: 'Blog',
+            position: 'left'
+          },
+          {
+            href: 'https://github.com/robbiebmorris/comp0016-MI34-website',
             label: 'GitHub',
             position: 'right',
           },
@@ -90,46 +128,68 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/intro',
-              },
-            ],
+            title: 'Site Info',
           },
           {
-            title: 'Community',
+            title: 'Quick Navigations',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'Requirements',
+                to: '/docs/requirements/requirements-home',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: 'Algorithms',
+                to: '/docs/algorithms/algorithms-home'
               },
               {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                label: 'UI Design',
+                to: 'docs/ui-design/ui-design-home'
               },
+              {
+                label: 'System Design',
+                to: 'docs/system-design/system-design-home'
+              },
+              {
+                label: 'Implementation',
+                to: 'docs/implementation/implementation-home'
+              },
+              {
+                label: 'Testing',
+                to: 'docs/testing/testing-home'
+              },
+              {
+                label: 'Evaluation',
+                to: 'docs/evaluation/evaluation-home'
+              },
+              {
+                label: 'Appendices',
+                to: 'docs/appendices/user-manual'
+              },
+              {
+                label: 'Blog',
+                to: '/blog'
+              }
             ],
           },
           {
             title: 'More',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
+                label: 'Project Github',
+                href: 'https://github.com/Ulk-G/COMP0016-Group23-App',
               },
               {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                label: 'Website Github',
+                href: 'https://github.com/robbiebmorris/comp0016-MI34-website',
+              },
+              {
+                label: 'UCL',
+                href: 'https://www.ucl.ac.uk/',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} All Rights Reserved`,
       },
       prism: {
         theme: prismThemes.github,
