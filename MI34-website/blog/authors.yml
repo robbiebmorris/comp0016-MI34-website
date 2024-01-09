@@ -1,17 +1,18 @@
-endi:
-  name: Endilie Yacop Sucipto
-  title: Maintainer of Docusaurus
-  url: https://github.com/endiliey
-  image_url: https://github.com/endiliey.png
+hugh:
+  name: Hugh Stanway
+  title: Team Member
+  url: https://github.com/HughStanway
+  image_url: https://github.com/HughStanway.png
 
-yangshun:
-  name: Yangshun Tay
-  title: Front End Engineer @ Facebook
-  url: https://github.com/yangshun
-  image_url: https://github.com/yangshun.png
+ulk:
+  name: Ulk Gerguri
+  title: Team Member
+  url: https://github.com/Ulk-G
+  image_url: https://github.com/Ulk-G.png
 
-slorber:
-  name: Sébastien Lorber
-  title: Docusaurus maintainer
-  url: https://sebastienlorber.com
-  image_url: https://github.com/slorber.png
+robbie:
+  name: Robbie Morris
+  title: Team Member
+  url: https://github.com/robbiebmorris
+  image_url: https://github.com/robbiebmorris.png
+
