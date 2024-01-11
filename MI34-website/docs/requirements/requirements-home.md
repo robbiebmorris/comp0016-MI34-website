@@ -52,9 +52,9 @@ We conducted a series of semi-structure interviews on potential users of the con
 
 Using the data collected, we created personas and scenarios for our target users.
 
-<div class="img-center"> ![Persona 1](img/Personas1.jpg) </div>
+<div class="img-center"> ![Persona 1](../../static/img/requirements/Personas1.jpg) </div>
 
-<div class="img-center"> ![Persona 2](img/Personas2.jpg) </div>
+<div class="img-center"> ![Persona 2](../../static/img/requirements/Personas2.jpg) </div>
 
 ## Use Cases
 
