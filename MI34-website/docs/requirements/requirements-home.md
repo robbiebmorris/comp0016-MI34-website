@@ -54,10 +54,14 @@ Using the data collected, we created personas and scenarios for our target users
 
 <div class="img-center"> ![Persona 1](../../static/img/requirements/Personas1.jpg) </div>
 
+<br /><br />
+
 <div class="img-center"> ![Persona 2](../../static/img/requirements/Personas2.jpg) </div>
 
 ## Use Cases
 
 The diagram below highlights how the users can interact with the final product.
+
+<div class="img-center"> ![Persona 2](../../static/img/requirements/use_cases_diagram.jpg) </div>
 
 ## MoSCoW Requirements List
