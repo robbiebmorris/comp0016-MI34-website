@@ -166,7 +166,7 @@ const config = {
                 to: 'docs/appendices/user-manual'
               },
               {
-                label: 'Blog',
+                label: 'Development Blog',
                 to: '/blog'
               }
             ],
