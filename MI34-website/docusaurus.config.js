@@ -8,7 +8,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Motion Input Bluetooth Controller',
+  title: 'MotionInput Bluetooth Controller',
   tagline: 'Bring MotionInput to Android and transform your smartphone into a Bluetooth controller, revolutionizing the way you interact with your devices. Effortlessly control your smart TV, laptop, or tablet with intuitive motion gestures.',
   favicon: 'img/favicon.ico',
 
