@@ -19,7 +19,7 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        MI Bluetooth Controller uses UCL's Motion Input technology brought
+        MI Bluetooth Controller uses UCL's MotionInput technology brought
         exclusively to Android. Control your device using your movements alone.
       </>
     ),
