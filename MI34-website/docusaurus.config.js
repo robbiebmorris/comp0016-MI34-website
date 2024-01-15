@@ -10,7 +10,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
   title: 'MotionInput Bluetooth Controller',
   tagline: 'Bring MotionInput to Android and transform your smartphone into a Bluetooth controller, revolutionizing the way you interact with your devices. Effortlessly control your smart TV, laptop, or tablet with intuitive motion gestures.',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/motioninputlogo.png',
 
   // Set the production url of your site here
   url: 'https://your-docusaurus-site.example.com',
@@ -56,12 +56,12 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/motioninputlogo.png',
       navbar: {
         title: 'MotionInput Bluetooth Controller',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: 'Site Logo',
+          src: 'img/motioninputlogo.png',
         },
         items: [
           {
@@ -166,7 +166,7 @@ const config = {
                 to: 'docs/appendices/user-manual'
               },
               {
-                label: 'Blog',
+                label: 'Development Blog',
                 to: '/blog'
               }
             ],
