@@ -24,15 +24,6 @@ const sidebars = {
       items: ['requirements/requirements-home'],
     },
   ],
-
-  algorithmsSidebar: [
-    {
-      type: 'category',
-      label: 'Algorithms',
-      items: ['algorithms/algorithms-home'],
-    },
-  ],
-
   uiDesignSidebar: [
     {
       type: 'category',
@@ -45,7 +36,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'System Design',
-      items: ['system-design/system-design-home'],
+      items: ['system-design/system-architecture','system-design/backend-architecture','system-design/design-goals'],
     },
   ],
 

@@ -72,12 +72,6 @@ const config = {
           },
           {
             type: 'docSidebar',
-            sidebarId: 'algorithmsSidebar',
-            position: 'left',
-            label: 'Algorithms',
-          },
-          {
-            type: 'docSidebar',
             sidebarId: 'uiDesignSidebar',
             position: 'left',
             label: 'UI Design',
