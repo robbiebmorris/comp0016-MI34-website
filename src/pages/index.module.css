@@ -21,3 +21,7 @@
   align-items: center;
   justify-content: center;
 }
+
+:root {
+  --ifm-code-font-size: 80%;
+}
