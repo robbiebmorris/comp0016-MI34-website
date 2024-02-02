@@ -21,7 +21,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Requirements',
-      items: ['requirements/requirements-home'],
+      items: ['requirements/requirements-home', 'requirements/gathering-requirements', 'requirements/personas', 'requirements/moscow'],
     },
   ],
   uiDesignSidebar: [
