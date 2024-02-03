@@ -3,7 +3,9 @@ import Heading from '@theme/Heading';
 import styles from './styles.module.css';
 import React from 'react';
 import { Card } from 'react-bootstrap';
-//import 'bootstrap/dist/css/bootstrap.min.css';
+import testImage from "../../../static/img/homepage/test_image.png";
+import ganttChartImage from "../../../static/img/homepage/gantt.png";
+import Image from 'react-bootstrap/Image';
 
 const FeatureList = [
   {
@@ -68,25 +70,78 @@ const abstract = {
 
 function CenteredContent({ title, text }) {
   return (
-    <div className={styles.centeredContent}>
+    <div className={`${styles.centeredContent} ${styles.background}`}>
       <h2>{title}</h2>
       <div dangerouslySetInnerHTML={{ __html: text }} />
     </div>
   );
 }
 
-function BasicExample() {
+function ProjectVideo({ title, videoId }) {
   return (
-    <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="holder.js/100px300" />
-      <Card.Body>
-        <Card.Title>Hugh Stanway</Card.Title>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </Card.Text>
-      </Card.Body>
-    </Card>
+    <div className={styles.centeredContent}>
+      <h2>{title}</h2>
+      <div className={styles.videoContainer}>
+        <iframe
+          width="840"
+          height="472.5"
+          src={`https://www.youtube.com/embed/${videoId}`}
+          title={title}
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+          className={styles.embeddedVideo}
+        ></iframe>
+      </div>
+    </div>
+  );
+}
+
+const team_members = {
+  hugh: "Hugh Stanway",
+  robbie: "Robbie Morris",
+  ulk: "Ulk Gerguri",
+}
+
+const team_members_abstract = {
+  hugh: `
+  2nd year BSc Computer Science student at UCL from the UK.
+  `,
+  robbie: `
+  2nd year Computer Science student at UCL.
+  `,
+  ulk: `
+  2nd year Computer Science student at UCL.
+  `
+}
+
+function TeamMemberCard({ member }) {
+  return (
+    <div className={styles.teamMemberCard}>
+      <Card style={{ width: '18rem', padding: '2rem' }}>
+        <Card.Img variant="top" src={testImage} rounded />
+        <Card.Body className={styles.cardBody}>
+          <Card.Title className={styles.cardTitle}>{team_members[member]}</Card.Title>
+          <Card.Text className={styles.cardText}>{team_members_abstract[member]}</Card.Text>
+        </Card.Body>
+      </Card>
+    </div>
+  );
+}
+
+const gantt = {
+  body: `
+  We used a Gantt chart to track progress throughout the couse of the project.
+  `,
+}
+
+function GanttChart({ title, text }) {
+  return (
+    <div className={styles.centeredContent}>
+      <h2>{title}</h2>
+      <div dangerouslySetInnerHTML={{ __html: text }} />
+      <img src={ganttChartImage} alt={ganttChartImage} className={styles.ganttImage}/>
+    </div>
   );
 }
 
@@ -112,7 +167,24 @@ export default function HomepageFeatures() {
           />
         </div>
         <div>
-          <BasicExample/>
+          <ProjectVideo
+            title="Project Video"
+            videoId="jtKWr7FQ-bo"
+          />
+        </div>
+        <div className="container">
+        <h2 className={styles.teamMembersTitle}>Meet The Team</h2>
+        <div className={`row ${styles.teamMembersContainer}`}>
+          <TeamMemberCard member="hugh" />
+          <TeamMemberCard member="robbie" />
+          <TeamMemberCard member="ulk" />
+        </div>
+      </div>
+      <div>
+          <GanttChart
+            title="Project Timeline"
+            text={gantt.body}
+          />
         </div>
       </div>
     </section>
