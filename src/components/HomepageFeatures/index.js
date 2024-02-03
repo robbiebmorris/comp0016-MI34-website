@@ -2,6 +2,8 @@ import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
 import React from 'react';
+import { Card } from 'react-bootstrap';
+//import 'bootstrap/dist/css/bootstrap.min.css';
 
 const FeatureList = [
   {
@@ -51,6 +53,43 @@ function Feature({Svg, title, description}) {
   );
 }
 
+const abstract = {
+  abstract: `
+  Currently available forms of interaction with computers and technology is not always accessible to everyone. For example, current patients in hospitals are foreced into using small and impractical TV sets 
+  for entertainment which come with hard to use controls. For patients are less mobile, this is nearly impossible to use.
+  <br/><br/>
+  With a MotionInput Bluetooth controller setup, patients could control a TV on the wall hands free with eye gaze, facial movements, or any of the other options MotionInput provides,
+  leading to a considerably more comfortable viewing experience. Our solution allows users to replace their mouse and keyboard with any android device and supports a large range of devices users may have.
+  <br/><br/>
+  As a part of the MotionInput for Android, our team focused on implementing Bluetooth connectivity and building the supporting app while also laying the foundations for further development in this area
+  for MotionInput. The architecture is designed to be developer friendly, allowing future developers to extend the existing components but also add their own components as MotionInput for Android becomes more developed.
+  `
+}
+
+function CenteredContent({ title, text }) {
+  return (
+    <div className={styles.centeredContent}>
+      <h2>{title}</h2>
+      <div dangerouslySetInnerHTML={{ __html: text }} />
+    </div>
+  );
+}
+
+function BasicExample() {
+  return (
+    <Card style={{ width: '18rem' }}>
+      <Card.Img variant="top" src="holder.js/100px300" />
+      <Card.Body>
+        <Card.Title>Hugh Stanway</Card.Title>
+        <Card.Text>
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </Card.Text>
+      </Card.Body>
+    </Card>
+  );
+}
+
 export default function HomepageFeatures() {
   return (
     <section className={styles.features}>
@@ -59,14 +98,21 @@ export default function HomepageFeatures() {
           {FeatureList.map((props, idx) => (
             <React.Fragment key={idx}>
               {props.Svg ? (
-                // Render existing features
                 <Feature {...props} />
               ) : (
-                // Render new hardcoded image with description
                 props.component
               )}
             </React.Fragment>
           ))}
+        </div>
+        <div>
+          <CenteredContent
+            title="Project Abstract"
+            text={abstract.abstract}
+          />
+        </div>
+        <div>
+          <BasicExample/>
         </div>
       </div>
     </section>
