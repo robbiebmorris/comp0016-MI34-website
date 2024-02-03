@@ -24,6 +24,15 @@ const sidebars = {
       items: ['requirements/requirements-home', 'requirements/gathering-requirements', 'requirements/personas', 'requirements/moscow'],
     },
   ],
+
+  researchSidebar: [
+    {
+      type: 'category',
+      label: 'Research',
+      items: ['research/research-home'],
+    },
+  ],
+
   uiDesignSidebar: [
     {
       type: 'category',
