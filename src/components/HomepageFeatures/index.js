@@ -5,7 +5,6 @@ import React from 'react';
 import { Card } from 'react-bootstrap';
 import testImage from "../../../static/img/homepage/test_image.png";
 import ganttChartImage from "../../../static/img/homepage/gantt.png";
-import Image from 'react-bootstrap/Image';
 
 const FeatureList = [
   {
@@ -72,7 +71,7 @@ function CenteredContent({ title, text }) {
   return (
     <div className={`${styles.centeredContent} ${styles.background}`}>
       <h2>{title}</h2>
-      <div dangerouslySetInnerHTML={{ __html: text }} />
+      <div className={styles.textContent} dangerouslySetInnerHTML={{ __html: text }} />
     </div>
   );
 }
@@ -160,32 +159,51 @@ export default function HomepageFeatures() {
             </React.Fragment>
           ))}
         </div>
-        <div>
-          <CenteredContent
-            title="Project Abstract"
-            text={abstract.abstract}
-          />
+
+        <div className={styles.spacing}></div>
+
+        <div className={styles.backgroundWrapper}>
+          <div className="container">
+            <CenteredContent
+              title="Project Abstract"
+              text={abstract.abstract}
+            />
+          </div>
         </div>
+
+        <div className={styles.spacing}></div>
+
         <div>
           <ProjectVideo
             title="Project Video"
             videoId="jtKWr7FQ-bo"
           />
         </div>
-        <div className="container">
-        <h2 className={styles.teamMembersTitle}>Meet The Team</h2>
-        <div className={`row ${styles.teamMembersContainer}`}>
-          <TeamMemberCard member="hugh" />
-          <TeamMemberCard member="robbie" />
-          <TeamMemberCard member="ulk" />
+
+        <div className={styles.spacing}></div>
+
+        <div className={styles.backgroundWrapper}>
+          <div className="container">
+            <h2 className={styles.teamMembersTitle}>Meet The Team</h2>
+            <div className={`row ${styles.teamMembersContainer}`}>
+              <TeamMemberCard member="hugh" />
+              <TeamMemberCard member="robbie" />
+              <TeamMemberCard member="ulk" />
+            </div>
+          </div>
         </div>
-      </div>
-      <div>
-          <GanttChart
-            title="Project Timeline"
-            text={gantt.body}
-          />
+
+
+        <div className={styles.spacing}></div>
+
+        <div>
+            <GanttChart
+              title="Project Timeline"
+              text={gantt.body}
+            />
         </div>
+
+        <div className={styles.spacing}></div>
       </div>
     </section>
   );
