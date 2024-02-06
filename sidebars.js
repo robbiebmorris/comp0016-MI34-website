@@ -37,7 +37,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'UI Design',
-      items: ['ui-design/ui-design-home'],
+      items: ['ui-design/design-principles', 'ui-design/sketches', 'ui-design/final-wireframe'],
     },
   ],
 

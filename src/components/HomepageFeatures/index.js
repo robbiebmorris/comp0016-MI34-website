@@ -162,8 +162,8 @@ export default function HomepageFeatures() {
 
         <div className={styles.spacing}></div>
 
-        <div className={styles.backgroundWrapper}>
-          <div className="container">
+        <div className={`${styles.backgroundWrapper}`}>
+          <div className={`container`}>
             <CenteredContent
               title="Project Abstract"
               text={abstract.abstract}
