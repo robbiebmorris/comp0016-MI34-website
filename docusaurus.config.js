@@ -127,9 +127,7 @@ const config = {
       footer: {
         style: 'dark',
         links: [
-          {
-            title: 'Site Info',
-          },
+        
           {
             title: 'Quick Navigation',
             items: [
@@ -138,8 +136,8 @@ const config = {
                 to: '/docs/requirements/requirements-home',
               },
               {
-                label: 'Algorithms',
-                to: '/docs/algorithms/algorithms-home'
+                label: 'Research',
+                to: '/docs/research/research-home',
               },
               {
                 label: 'UI Design',
@@ -147,7 +145,7 @@ const config = {
               },
               {
                 label: 'System Design',
-                to: 'docs/system-design/system-design-home'
+                to: 'docs/system-design/system-architecture'
               },
               {
                 label: 'Implementation',
@@ -162,14 +160,35 @@ const config = {
                 to: 'docs/evaluation/evaluation-home'
               },
               {
-                label: 'Appendices',
-                to: 'docs/appendices/user-manual'
-              },
-              {
                 label: 'Development Blog',
                 to: '/blog'
               }
             ],
+          },
+          {
+            title: 'Appendices',
+            items: [
+              {
+                label: 'User Manual',
+                to: 'docs/appendices/user-manual'
+              },
+              {
+                label: 'Deployment Manual',
+                to: 'docs/appendices/deployment-manual'
+              },
+              {
+                label: 'GDPR',
+                to: 'docs/appendices/GDPR'
+              },
+              {
+                label: 'Data Privacy',
+                to: 'docs/appendices/privacy-of-data'
+              },
+              {
+                label: 'Monthly Videos',
+                to: 'docs/appendices/monthly-video'
+              },
+            ]
           },
           {
             title: 'More',

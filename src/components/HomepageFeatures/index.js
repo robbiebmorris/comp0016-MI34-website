@@ -62,8 +62,8 @@ const abstract = {
   With a MotionInput Bluetooth controller setup, patients could control a TV on the wall hands free with eye gaze, facial movements, or any of the other options MotionInput provides,
   leading to a considerably more comfortable viewing experience. Our solution allows users to replace their mouse and keyboard with any android device and supports a large range of devices users may have.
   <br/><br/>
-  As a part of the MotionInput for Android, our team focused on implementing Bluetooth connectivity and building the supporting app while also laying the foundations for further development in this area
-  for MotionInput. The architecture is designed to be developer friendly, allowing future developers to extend the existing components but also add their own components as MotionInput for Android becomes more developed.
+  As a part of the MotionInput for Android, our team focused on implementing Bluetooth connectivity and building the supporting app while also laying the foundations for further development. 
+  The architecture is designed to be developer friendly, allowing future developers to extend the existing components but also add their own components as MotionInput for Android becomes more developed.
   `
 }
 
@@ -162,8 +162,8 @@ export default function HomepageFeatures() {
 
         <div className={styles.spacing}></div>
 
-        <div className={styles.backgroundWrapper}>
-          <div className="container">
+        <div className={`${styles.backgroundWrapper}`}>
+          <div className={`container`}>
             <CenteredContent
               title="Project Abstract"
               text={abstract.abstract}
