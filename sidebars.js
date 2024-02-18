@@ -29,7 +29,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Research',
-      items: ['research/project-research', 'research/technology-research', 'research/technical-decisions'],
+      items: ['research/project-research', 'research/technology-research'],
     },
   ],
 

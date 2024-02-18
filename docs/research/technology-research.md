@@ -1,6 +1,6 @@
 # Technology Research
 
-## Language
+### Language
 
 Firstly, we needed to pick a language we would use for development. Andoid development is done using two main languages: Java and Kotlin so we conducted research into both before making an informed decision. The optimal language should have efficient and fast runtime performance while also being readable to developers.
 
@@ -17,7 +17,7 @@ Due to it's age Java can be seen as more stable then Kotlin. There is long term 
 
 Overall, we found there wre good advantages that could make the case for each language being the better choice. Kotlin has less memory overhead whereas Java is much more documented and supported. We decided to use Java for our project due to our team all already having experience with the language and therefore already know it's syntax meaning less time would need to be spent learning a new language and because of it's current superior documentation and support.
 
-## Android SDK vs. Flutter
+### Android SDK vs. Flutter
 
 Both Android SDK and Flutter are built by Google and used in the development of applications, however, Android SDK is used only to build native Android applications whereas Flutter enables cross platform development from a single codebase. <sub>[3]</sub> Since our project only focuses on Android applications both would be a suitable choice.
 
@@ -28,6 +28,26 @@ Due to Android SDK being around for much longer it has a vast range of libraries
 Research has shown that Flutter apps are generally more storage invasive then native Android SDK apps, this makes their download much larger. The research found that the same app built in Flutter was 4.7 MB where as the Java or Kotlin counterpart was only 0.5 MB. <sub>[4]</sub> Since our project only needs to build apps for Android we should consider if the additional overhead produced by Flutter is actually necessary.
 
 Overall, we found the Android SDK built using Android Studio IDE would be most suitable for our project. This was becuase it's performance advantage over Flutter would be beneicial in increasing the usability of the end product. The added benefit of much more extensive resources available for Anroid SDK further increased it's suitability for our project.
+
+## Technical Decisions
+
+After conducting extensive background reseach we were able to make the following decisions on how the MotionInput Bluetooth controller would be built:
+
+<div class="img-center">
+
+| Type                                     | Decision         |
+|------------------------------------------|------------------|
+| Language                                 | Java             |
+| SDK                                      | Android SDK      |
+| Integrated Development Environment (IDE) | Android Studio   |
+| JSON Library                             | Jackson          |
+| Documentation Generation                 | JavaDoc          |
+| Build Tool                               | Gradle           |
+| Design Language                          | Materials Design |
+| Testing Framework                        | JUnit            |
+
+</div>
+
 
 ## Links used for references (Need to do properly later)
 
