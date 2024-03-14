@@ -28,11 +28,66 @@ Our testing stratergy followed the test-driven-development principle throughout 
 
 </div>
 
-# Instrumened Tests
+# Instrumented Tests
+
+Instrumented tests in Android are a crucial part of the testing strategy for Android applications. These tests are designed to run on physical devices or emulators and simulate user interactions with the app. They are performed to ensure that the app functions correctly in a real-world environment and to validate its behavior across different devices, screen sizes, and operating system versions.Instrumented tests provide a higher level of confidence in the app's functionality, as they simulate real user interactions and validate the app's behavior against expected outcomes.
+
+We used instrumented testing on the majorirty of our classes such as fragments, activities, dialogs and bluetooth components due to their use of the Android framework and UI components. This meant they could not be run on the standard JVM and be tested using standard unit tests. The tools we used for instrumented testing are Espresso, Mockito, UiAutomator, JUnit4 and AndroidX Fragment-Testing.
+
+<div class="img-center"> ![Testing Frameworks](../../static/img/testing/testing_logos.png) </div>
+
+AndroidX Fragment-Testing allowed us to launch and test fragments and activities in isolation to the full app. We then used Espresso to simulate user interactions and make assertions on UI components to test the UI and UiAutomator to interact with system-level UI elements such as permission requests. We combined this with Mockito to mock objects of our classes to simulate their behaviour, we could they insert them into our tests to simulate a variety of scenarios. Finally, we made use of JUnit to make assertions about the state of our objects during tests.
+
+An example UI test on a fragment is shown below:
+
+```
+public class AddManualFragmentTest {
+    private FragmentScenario<AddManualFragment> scenario;
+    @Mock
+    private EventBus eventBus;
+
+    @Before
+    public void setUp() {
+        scenario = FragmentScenario.launchInContainer(AddManualFragment.class, null, R.style.Theme_COMP0016Group23App);
+        scenario.moveToState(Lifecycle.State.RESUMED);
+
+        MockitoAnnotations.openMocks(this);
+    }
+
+    @After
+    public void tearDown() {
+        reset(eventBus);
+    }
+
+    @Ignore("Helper method to simulate button touch events")
+    private void clickButtonWithId(int viewId) {
+        scenario.onFragment(fragment -> {
+            Button button = fragment.requireView().findViewById(viewId);
+
+            MotionEvent downEvent = MotionEvent.obtain(0, 0, MotionEvent.ACTION_DOWN, button.getWidth() / 2f, button.getHeight() / 2f, 0);
+            button.dispatchTouchEvent(downEvent);
+
+            MotionEvent upEvent = MotionEvent.obtain(0, 0, MotionEvent.ACTION_UP, button.getWidth() / 2f, button.getHeight() / 2f, 0);
+            button.dispatchTouchEvent(upEvent);
+        });
+    }
+
+    @Test
+    public void testInvalidMacError() {
+        onView(withId(R.id.deviceMacInput)).perform(typeText("Not a valid MAC address"));
+        clickButtonWithId(R.id.addDeviceButton);
+        onView(withId(R.id.deviceMacInput)).check(matches(hasErrorText("Invalid MAC")));
+    }
+}
+```
 
 # Integration Tests
 
+Integration tests were used to test how the bluetooth component interacted as a whole and with the Android framework. Alot of the same testing frameworks were used for this and we tried to simulate as much of the bluetooth functionality as possible to ensure eveything worked as intended. AndroidX allows us to launch an activity within our test class, we then created a blank TestActivity as to isolate the bluetooth component as much as possible so we could perform tests on it's functionality.
+
 # Performace Tests
+
+We tested our apps performance by measuring it's CPU usage and memory usage using the provided profiler by Android Studio. This allowed us to see the average overall performance of our app over a prolonged test but also gave us insight into how CPU and memory usage changed when we interacted with certain functions. This allowed us to identify any performance bottlenecks but also draw conclusions about the apps overall performance and usability.
 
 # User Acceptance Tests
 
