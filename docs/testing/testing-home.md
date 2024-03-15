@@ -28,7 +28,7 @@ Our testing stratergy followed the test-driven-development principle throughout 
 
 </div>
 
-# Instrumented Tests
+## Instrumented Tests
 
 Instrumented tests in Android are a crucial part of the testing strategy for Android applications. These tests are designed to run on physical devices or emulators and simulate user interactions with the app. They are performed to ensure that the app functions correctly in a real-world environment and to validate its behavior across different devices, screen sizes, and operating system versions.Instrumented tests provide a higher level of confidence in the app's functionality, as they simulate real user interactions and validate the app's behavior against expected outcomes.
 
@@ -81,14 +81,46 @@ public class AddManualFragmentTest {
 }
 ```
 
-# Integration Tests
+Insert test cases picture here**
+
+## Integration Tests
 
 Integration tests were used to test how the bluetooth component interacted as a whole and with the Android framework. Alot of the same testing frameworks were used for this and we tried to simulate as much of the bluetooth functionality as possible to ensure eveything worked as intended. AndroidX allows us to launch an activity within our test class, we then created a blank TestActivity as to isolate the bluetooth component as much as possible so we could perform tests on it's functionality.
 
-# Performace Tests
+<div class="img-center"> ![Testing Frameworks](../../static/img/testing/integration_test.png) </div>
+
+## Performace Tests
 
 We tested our apps performance by measuring it's CPU usage and memory usage using the provided profiler by Android Studio. This allowed us to see the average overall performance of our app over a prolonged test but also gave us insight into how CPU and memory usage changed when we interacted with certain functions. This allowed us to identify any performance bottlenecks but also draw conclusions about the apps overall performance and usability.
 
-# User Acceptance Tests
+The tests were carried out on a Samsung Galaxy XCover 5 with an Octa-Core processor @ 2GHz and 4GB of memory over a minute time period of general use. The resusts are given below:
 
-# Compatability Tests
+<div class="img-center"> ![Testing Frameworks](../../static/img/testing/cpu.png) </div>
+
+<br />
+
+The results of the test show that CPU usage by the app remains consistiently within the range of 10%-15% throughout the test. We see no spikes in usage at any point during the test, even throughout usage of the apps UI elements, therefore it's reasonable to conclude the app it running efficiently without any obvoius processor bottlenecks.
+
+<div class="img-center"> ![Testing Frameworks](../../static/img/testing/memory.png) </div>
+
+<br />
+
+Memory usage is also consistient throughout the test, remaining in the range of 90MB-95MB. Similarly, we also see no spikes in usage, leading of to conclude there are no memory bottlenecks. From the total memory useage we see that approximetly 45MB comes from Java, Native and other sources outside of our apps code.
+
+## Compatability Tests
+
+Throughout development we ensured to test on as many devices as possible. We have verified that our app can be connected to and control the following devices:
+
+- Apple Mac Laptops and Computers
+- Windows Laptops and Computers
+- Apple iPad
+- Android Tablets (e.g. Samsung Tablets)
+- Android Smart TV (SONY Bravia)
+
+The app itself can be installed and used on Android devices that are Bluetooth enabled and running Android version 11.0 and above. As of October 2023, according to statistics calculated by Google, this covers the majority of active android devices. <sub>[1]</sub>
+
+## User Acceptance Tests
+
+## Links used for references (Need to do properly later)
+
+[1] https://www.composables.com/tools/distribution-chart
