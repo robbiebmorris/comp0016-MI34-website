@@ -1,20 +1,29 @@
 ---
-slug: february-update-3
-title: February Update 3
-authors: hugh
-tags: [Bug Fixes, MotionInput Integration]
+slug: february-update-1
+title: February Update 1
+authors: ulk
+tags: [Bluetooth App, Keyboard]
 ---
 
-## Further Development
+## Introducing the Bluetooth Keyboard
 
-Begining the month of february we begun to work on bug fixes and issues within the app with the goal of getting the app deployment ready. We started getting ready for MotionInput integration.
+Ending this month we added a fully functioning bluetooth keyboard onto the app. It took a while to get the combined mouse and keyboard HID descriptor working, but we finally got it functioning!
 
-### Fixing the Permissions Check
+### The Keyboard Fragment: Seamless Integration
 
-When testing of different phone models and versions of Andoid we noticed that the Bluetooth connectivity was not working correctly and sometimes even causing the . After further investigation we deduced that the issue was within the permissions check component. Finally, after some more testing and reseach we we're able to issue an update to the component that fixed the problem.
+Our latest update includes the integration of a keyboard fragment within the app. When you navigate to the keyboard section, it automatically focuses and brings up a soft keyboard. This allows for an intuitive and familiar typing experience, similar to standard mobile device keyboards.
 
-### Getting Ready for MotionInput Integration
+#### Key Features of the Keyboard Fragment:
+- **Automatic Focus**: The keyboard opens and focuses immediately, ensuring a smooth transition for the user.
+- **Soft Keyboard Implementation**: A soft keyboard is displayed, offering a comfortable and efficient typing experience.
+- **Multiline Editing**: Supports multiline text editing, catering to various text input needs. Including deleting text, and creating line spaces via the enter key.
 
-With the maters students working on MotionInput for Andorid getting close a working prototype we started getting ready to integrate their work into our app. This started by meeting with the other team to discuss integration options and how each of the respective code bases worked. Once we decided on a plaan we begun with getting our app ready. This started by adding a MotionInput switch to the top bar of the app which when toggled 'on' it would activate MotionInput mode whereas when switched off it would remain in manual control mode. When in MotionInput mode the manual screens for each of the components will be replaced with the MotionInput version of this screen. By default this includes a drop-down menu we added which allows the user to select the version of MotionInput they want to use: Face, Hands or Eyes.
+### Behind the Scenes: Development Insights
 
-After this was complete and working the other team begin to integrate their code into each MotionInput fragment we creared.
+The development of this feature involved several technical considerations:
+
+- **Fragment Implementation**: The keyboard is implemented as a fragment within the app, allowing for easy access and integration with other features.
+- **Hiding the Text Box**: To maintain a clean and uncluttered interface, we chose to hide the textbox on the app while ensuring the keyboard remains responsive to user input on the target device.
+- **Bluetooth HID Protocol**: Each keystroke is captured and sent via the Bluetooth HID protocol to the target device. This ensures real-time text input and response.
+
+<div class="img-center"> ![Not Supported Pupup Image](../static/img/ui/keyboard.png) </div>
