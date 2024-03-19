@@ -40,7 +40,7 @@ AndroidX Fragment-Testing allowed us to launch and test fragments and activities
 
 An example UI test on a fragment is shown below:
 
-```js
+```jsx title="/src/androidTest/java/com/example/comp0016_group23_app/fragments/bluetooth/AddManualFragment.java"
 public class AddManualFragmentTest {
     private FragmentScenario<AddManualFragment> scenario;
     @Mock
