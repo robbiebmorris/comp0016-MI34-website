@@ -104,4 +104,7 @@ body {
 
 .spacing {
   margin-bottom: 100px;
+  display: block;
+  width: auto;
+  font: 1px;
 }

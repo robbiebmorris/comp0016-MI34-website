@@ -6,9 +6,6 @@ import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Heading from '@theme/Heading';
 import styles from './index.module.scss';
-import { faLink, faUniversity } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { Image } from 'react-bootstrap';
 
 function HomepageHeader({ sliderContent, sliderCounter }) {
   const { siteConfig } = useDocusaurusContext();
@@ -17,7 +14,7 @@ function HomepageHeader({ sliderContent, sliderCounter }) {
       <div className={styles.header}>
         <div className={styles.hero}>
           <div className={styles.heroText}>
-            <h2>MotionInput 3.4</h2>
+            <h2>MotionInput v3.4</h2>
             <h1>Mobile Bluetooth </h1>
             <h1 className={styles.gradientText}>Controller.</h1>
             <h3>{siteConfig.tagline}</h3>

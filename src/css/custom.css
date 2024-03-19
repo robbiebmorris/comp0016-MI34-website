@@ -13,7 +13,7 @@
   --ifm-color-primary-light: #757de8;
   --ifm-color-primary-lighter: #757de8;
   --ifm-color-primary-lightest: #757de8;
-  --ifm-code-font-size: 150%;
+  --ifm-code-font-size: 90%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
@@ -45,4 +45,10 @@
 .img-center:hover {
   transform: scale(1.01);
   transition: transform 0.7s ease;
+}
+
+.hidden {
+    display: none !important;
+    display: block;
+    width: 0px;
 }

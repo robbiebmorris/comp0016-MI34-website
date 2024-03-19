@@ -100,14 +100,14 @@ const config = {
             label: 'Implementation',
           },
           {
-            type: 'docSidebar',
-            sidebarId: 'testingSidebar',
+            type: 'doc',
+            docId: 'testing/testing-home',
             position: 'left',
             label: 'Testing',
           },
           {
-            type: 'docSidebar',
-            sidebarId: 'evaluationSidebar',
+            type: 'doc',
+            docId: 'evaluation/evaluation-home',
             position: 'left',
             label: 'Evaluation',
           },

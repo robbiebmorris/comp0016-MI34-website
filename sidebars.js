@@ -70,6 +70,7 @@ const sidebars = {
       type: 'category',
       label: 'Evaluation',
       items: ['evaluation/evaluation-home'],
+      className: 'hidden'
     },
   ],
 
