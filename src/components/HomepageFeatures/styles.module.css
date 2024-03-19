@@ -95,7 +95,7 @@ body {
 }
 
 .backgroundWrapper {
-  background-color: #f7f5f5; 
+  /* background-color: #f7f5f5;  */
   width: 100vw; 
   padding: 20px 0; 
   margin-left: calc(50% - 50vw);

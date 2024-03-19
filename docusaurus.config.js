@@ -9,7 +9,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'MotionInput Bluetooth Controller',
-  tagline: 'Bring MotionInput to Android and transform your smartphone into a Bluetooth controller, revolutionizing the way you interact with your devices. Effortlessly control your smart TV, laptop, or tablet with intuitive motion gestures.',
+  tagline: 'Revolutionize the way you interact with your devices through MotionInput.',
   favicon: 'img/motioninputlogo.png',
 
   // Set the production url of your site here
@@ -33,6 +33,9 @@ const config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
+
+  //FOR SCSS
+  plugins: ['docusaurus-plugin-sass'],
 
   presets: [
     [
