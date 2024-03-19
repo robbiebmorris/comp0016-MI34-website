@@ -20,11 +20,11 @@ Our testing stratergy followed the test-driven-development principle throughout 
 
 <div class="img-center">
 
-| Automated Tests | Manual Tests             |
-|-----------------|--------------------------|
-| Instrumented Tests | User Acceptance Tests |
-| Integration Tests  | Compatability Tests   |
-| Performance Tests  |                       |
+| Automated Tests    | Manual Tests              |
+|--------------------|---------------------------|
+| Instrumented Tests | User Acceptance Tests     |
+| Integration Tests  | Compatability and Tests   |
+| Performance Tests  |                           |
 
 </div>
 
@@ -107,7 +107,7 @@ The results of the test show that CPU usage by the app remains consistiently wit
 
 Memory usage is also consistient throughout the test, remaining in the range of 90MB-95MB. Similarly, we also see no spikes in usage, leading of to conclude there are no memory bottlenecks. From the total memory useage we see that approximetly 45MB comes from Java, Native and other sources outside of our apps code.
 
-## Compatability Tests
+## Compatability and Tests
 
 Throughout development we ensured to test on as many devices as possible. We have verified that our app can be connected to and control the following devices:
 
@@ -117,7 +117,7 @@ Throughout development we ensured to test on as many devices as possible. We hav
 - Android Tablets (e.g. Samsung Tablets)
 - Android Smart TV (SONY Bravia)
 
-The app itself can be installed and used on Android devices that are Bluetooth enabled and running Android version 11.0 and above. As of October 2023, according to statistics calculated by Google, this covers the majority of active android devices. <sub>[1]</sub>
+The app itself can be installed and used on Android devices that are Bluetooth enabled and running Android version 11.0 and above. As of October 2023, according to statistics calculated by Google, this covers the majority of active android devices. Thefore we can conclude our app is deliverable and accessible to a large proportion of users. <sub>[1]</sub>
 
 ## User Acceptance Tests
 
