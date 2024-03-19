@@ -34,6 +34,7 @@ const config = {
     locales: ['en'],
   },
 
+
   //FOR SCSS
   plugins: ['docusaurus-plugin-sass'],
 
@@ -60,6 +61,11 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+
+    colorMode: {
+        defaultMode: 'light',
+        disableSwitch: true,
+    },
       // Replace with your project's social card
       image: 'img/motioninputlogo.png',
       navbar: {

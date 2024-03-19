@@ -65,14 +65,14 @@ const sidebars = {
     },
   ],
 
-  evaluationSidebar: [
-    {
-      type: 'category',
-      label: 'Evaluation',
-      items: ['evaluation/evaluation-home'],
-      className: 'hidden'
-    },
-  ],
+//   evaluationSidebar: [
+//     {
+//       type: 'category',
+//       label: 'Evaluation',
+//       items: ['evaluation/evaluation-home'],
+//       className: 'hidden'
+//     },
+//   ],
 
   appendicesSidebar: [
     {
