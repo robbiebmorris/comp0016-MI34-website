@@ -49,21 +49,21 @@ const sidebars = {
     },
   ],
 
-  implementationSidebar: [
-    {
-      type: 'category',
-      label: 'Implementation',
-      items: ['implementation/implementation-home'],
-    },
-  ],
+//  implementationSidebar: [
+//    {
+//      type: 'category',
+//      label: 'Implementation',
+//      items: ['implementation/implementation-home'],
+//    },
+//  ],
 
-  testingSidebar: [
-    {
-      type: 'category',
-      label: 'Testing',
-      items: ['testing/testing-home'],
-    },
-  ],
+//  testingSidebar: [
+//    {
+//      type: 'category',
+//      label: 'Testing',
+//      items: ['testing/testing-home'],
+//    },
+//  ],
 
 //   evaluationSidebar: [
 //     {
