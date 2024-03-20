@@ -1,6 +1,16 @@
-# Backend Architecture
+# System Design
 
-## High-Level Overview
+## System Architecture
+
+The MotionInput Bluetooth controller comprises both front-end and back-end components. The front-end components handle user interface presentation and user interactions within the application. The application is structured around a single activity, utilizing fragments as defined UI components and a fragment manager to dynamically switch between various UI displays based on user selections. XML layouts are employed in constructing the front-end to specify the structure and appearance of UI elements.
+
+The back-end systems deal with the Bluetooth connection related logic and use Android APIs to deal with the interactions the user makes with the UI elements of the app. The back-end also communicates with the devices system preferences to save the users presets and local data.
+
+<div class="img-center"> ![High-level System Architecture](../../static/img/sys-design/system-architecture.png) </div>
+
+## Backend Architecture
+
+### High-Level Overview
 
 The back-end of MotionInput Bluetooth controller is comprised of many components which are designed to deal with different aspects of the app functionality. We used an Object-Oriented approach to ensure modilarity between these components. This was essential as many of these componets dealt with completly different tasks to each other therefore by seperate and modular the readibility of the backend code-base was mainitained at a high level, even as the size of the app grew.
 
@@ -17,7 +27,7 @@ Outside of MainActivity, the other classes can be grouped together into 4 genera
 
 The general types are then comprised of specific classes which define a specific component in that group:
 
-## Bluetooth Components
+### Bluetooth Components
 
 <details>
   <summary>BluetoothMain</summary>
@@ -76,7 +86,7 @@ The general types are then comprised of specific classes which define a specific
   </div>
 </details>
 
-## Dialog Components
+### Dialog Components
 
 <details>
   <summary>GamePadSettings</summary>
@@ -119,7 +129,7 @@ The general types are then comprised of specific classes which define a specific
   </div>
 </details>
 
-## Fragment Components
+### Fragment Components
 
 These classes contin the logic needed for each layout fragment. This includes the logic needed to deal with user interactions with the UI elements for each fragment. They can then make the necessary calls to the rest of the back-end depending on the respective user interaction. These can be grouped further:
 
@@ -178,7 +188,7 @@ These classes contin the logic needed for each layout fragment. This includes th
   </div>
 </details>
 
-## Settings Component
+### Settings Component
 
 <details>
   <summary>Settings</summary>
@@ -189,8 +199,35 @@ These classes contin the logic needed for each layout fragment. This includes th
   </div>
 </details>
 
-## Class Structure Overview
+### Class Structure Overview
 
 A simplifed overview of the applications class structure is shown by this UML diagram:
 
 <div class="img-center"> ![Class Structure UML](../../static/img/sys-design/uml-diagram.png) </div>
+
+## Design Goals
+
+During the design and implementation process we used the following considerations:
+
+### Ease of Use
+
+- The user-interface should be simple and easy to use.
+- Flow between different components of the UI should be easy to navigate.
+- The features of the app must be intuitive and easy to learn.
+- Each component of the app should have an information section which provides how-to-use insturctions to the user.
+
+### Modularity
+
+- Different components of the app, e.g. mouse or keyboard, must be modular and seperate from one another.
+- This means new app components can be added easily by future developers.
+- Components which share common features, such as information dialog's, must implement a way to share them between each other while minimising duplicate code. 
+
+### Extendability
+
+- New components and UI features should be easy to add and implement.
+- Extending the functionality of existing components should be intuitive for new developers.
+
+### Consistiency
+
+- UI elements of the app should be consistient throughout different components.
+- Coding conventions should be followed throughout the entire codebase to increase readability for future developers.

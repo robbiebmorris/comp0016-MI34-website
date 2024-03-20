@@ -119,6 +119,8 @@ Throughout development we ensured to test on as many devices as possible. We hav
 - Android Tablets (e.g. Samsung Tablets)
 - Android Smart TV (SONY Bravia)
 
+We also conducted installation and testing of our app on a Chromebook due to its compatibility with Android apps. However, during these tests we found that Chromebooks (and ChromeOS) don't allow apps to access Bluetooth HID profiles and therefore our Bluetooth component would not be able to work. After communicating this problem with our client, Dean, he agreed that it would be best to drop support for Chromebook and focus on the mobile app.
+
 The app itself can be installed and used on Android devices that are Bluetooth enabled and running Android version 11.0 and above. As of October 2023, according to statistics calculated by Google, this covers the majority of active android devices. Thefore we can conclude our app is deliverable and accessible to a large proportion of users. <sub>[1]</sub>
 
 ## User Acceptance Tests
