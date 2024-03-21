@@ -107,6 +107,8 @@ The results of the test show that CPU usage by the app remains consistiently wit
 
 Memory usage is also consistient throughout the test, remaining in the range of 90MB-95MB. Similarly, we also see no spikes in usage, leading of to conclude there are no memory bottlenecks. From the total memory useage we see that approximetly 45MB comes from Java, Native and other sources outside of our apps code.
 
+Finally, one important consideration when testing our apps performance is the hardware we used during testsing. For example, the Samesung XCover 5 that we used for testing throughout development is on the bottom end in terms of hardware performance for Samsung's devices. However, when testing the app on a Samsung S23, which in comparison has 8GB of memory and a 3.36GHz processor, we noticed the mouse movements on the target device were slightly smoother. Therefore, we note that the hardware the user installs the app on may have an impact on performance, but overall the app is still usable on all devices we testsed.
+
 ## Compatability and Tests
 
 Throughout development we ensured to test on as many devices as possible. We have verified that our app can be connected to and control the following devices:

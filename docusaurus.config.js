@@ -100,8 +100,8 @@ const config = {
             label: 'System Design',
           },
           {
-            type: 'docSidebar',
-            sidebarId: 'implementationSidebar',
+            type: 'doc',
+            docId: 'implementation/implementation-home',
             position: 'left',
             label: 'Implementation',
           },
