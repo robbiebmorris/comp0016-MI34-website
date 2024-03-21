@@ -105,10 +105,9 @@
       background: linear-gradient(50deg, #65B1F6 12%, #85C7FF 20%, #6EE7B7 35%, #4CAFFF 55%, #1D8DF7 80%, #65B1F6 90%);
       background-size: 1000% 1000%;
 
-      mask-image: url(logo.png);
+      mask-image: url(../../static/img/pnglogo.png);
       mask-size: contain;
       animation: 15s linear 0s infinite alternate home-header-pulse;
-  
       margin-bottom: 20px;
     }
     

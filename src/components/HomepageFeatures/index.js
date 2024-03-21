@@ -1,15 +1,20 @@
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
-import React from 'react';
-import { Card } from 'react-bootstrap';
+import { Card, Fade } from 'react-bootstrap';
 import testImage from "../../../static/img/homepage/test_image.png";
 import ganttChartImage from "../../../static/img/homepage/gantt.png";
+import FadeInOnScroll from '../FadeInOnScroll';
+import ShrinkOnScroll from '../ShrinkOnScroll';
+import React from 'react';
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 
 const FeatureList = [
   {
     title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('@site/static/img/homepage/legacymilogo.svg').default,
     description: (
       <>
         MI Bluetooth Controller was designed with ease of use in mind. It's simple,
@@ -19,7 +24,7 @@ const FeatureList = [
   },
   {
     title: 'Powered by Motion Input',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    Svg: require('@site/static/img/homepage/milogo.svg').default,
     description: (
       <>
         MI Bluetooth Controller uses UCL's MotionInput technology brought
@@ -29,7 +34,7 @@ const FeatureList = [
   },
   {
     title: 'Seamless across Platforms',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('@site/static/img/homepage/gamepadmilogo.svg').default,
     description: (
       <>
         Designed to operate on various platforms, including Windows, MacOS, iPadOS,
@@ -43,10 +48,10 @@ const FeatureList = [
 function Feature({Svg, title, description}) {
   return (
     <div className={clsx('col col--4')}>
-      <div className="text--center">
+      <div className={"text--center"}>
         <Svg className={styles.featureSvg} role="img" />
       </div>
-      <div className="text--center padding-horiz--md">
+      <div className="text--center padding-horiz--md featureText">
         <Heading as="h3">{title}</Heading>
         <p>{description}</p>
       </div>
@@ -78,21 +83,21 @@ function CenteredContent({ title, text }) {
 
 function ProjectVideo({ title, videoId }) {
   return (
-    <div className={styles.centeredContent}>
-      <h2>{title}</h2>
-      <div className={styles.videoContainer}>
-        <iframe
-          width="840"
-          height="472.5"
-          src={`https://www.youtube.com/embed/${videoId}`}
-          title={title}
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-          className={styles.embeddedVideo}
-        ></iframe>
-      </div>
-    </div>
+        <div className={styles.centeredContent}>
+            <h2>{title}</h2>
+            <div className={styles.videoContainer}>
+                <iframe
+                width="100%"
+                height="100%"
+                src={`https://www.youtube.com/embed/${videoId}`}
+                title={title}
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                className={styles.embeddedVideo}
+                ></iframe>
+            </div>
+        </div>
   );
 }
 
@@ -104,14 +109,23 @@ const team_members = {
 
 const team_members_abstract = {
   hugh: `
-  2nd year BSc Computer Science student at UCL from the UK.
+  Roles: Client liaison, Programmer, Tester
   `,
   robbie: `
-  2nd year Computer Science student at UCL.
+  Roles: Report editor, UI Designer, Researcher
   `,
   ulk: `
-  2nd year Computer Science student at UCL.
+  Roles: Programmer, UI Designer, Tester
   `
+}
+
+const team_member_links = {
+    hugh: {"linkedIn": "?",
+            "github": "?"},
+    robbie: {"linkedIn": "?",
+            "github": "?"},
+    ulk: {"linkedIn": "?",
+            "github": "?"},
 }
 
 function TeamMemberCard({ member }) {
@@ -120,9 +134,13 @@ function TeamMemberCard({ member }) {
       <Card style={{ width: '18rem', padding: '2rem' }}>
         <Card.Img variant="top" src={testImage} rounded />
         <Card.Body className={styles.cardBody}>
-          <Card.Title className={styles.cardTitle}>{team_members[member]}</Card.Title>
+          <Card.Title className={styles.cardTitle}>
+          {team_members[member]}
+                <Card.Link href={team_member_links[member].github}><FontAwesomeIcon icon={faGithub} className={styles.icon} /></Card.Link>
+                <Card.Link href={team_member_links[member].linkedIn}><FontAwesomeIcon icon={faLinkedin} className={styles.icon} /></Card.Link>
+          </Card.Title>
           <Card.Text className={styles.cardText}>{team_members_abstract[member]}</Card.Text>
-        </Card.Body>
+          </Card.Body>
       </Card>
     </div>
   );
@@ -148,40 +166,47 @@ export default function HomepageFeatures() {
   return (
     <section className={styles.features}>
       <div className="container">
+        <FadeInOnScroll><ShrinkOnScroll>
         <div className="row">
           {FeatureList.map((props, idx) => (
-            <React.Fragment key={idx}>
-              {props.Svg ? (
-                <Feature {...props} />
-              ) : (
-                props.component
-              )}
-            </React.Fragment>
+                <React.Fragment key={idx}>
+                {props.Svg ? (
+                    <Feature {...props} />
+                ) : (
+                    props.component
+                )}
+                </React.Fragment>
           ))}
         </div>
+        </ShrinkOnScroll></FadeInOnScroll>
 
         <div className={styles.spacing}></div>
 
-        <div className={`${styles.backgroundWrapper}`}>
-          <div className={`container`}>
-            <CenteredContent
-              title="Project Abstract"
-              text={abstract.abstract}
-            />
-          </div>
-        </div>
+        <FadeInOnScroll><ShrinkOnScroll>
+            <div className={`${styles.backgroundWrapper}`}>
+                <div className={`abstractContainer`}>
+                    <CenteredContent
+                    title="Project Abstract"
+                    text={abstract.abstract}
+                    />
+                </div>
+            </div>
+        </ShrinkOnScroll></FadeInOnScroll>
 
         <div className={styles.spacing}></div>
-
+        
+        <FadeInOnScroll><ShrinkOnScroll>
         <div>
           <ProjectVideo
             title="Project Video"
             videoId="jtKWr7FQ-bo"
           />
         </div>
+        </ShrinkOnScroll></FadeInOnScroll>
 
         <div className={styles.spacing}></div>
-
+        
+        <FadeInOnScroll><ShrinkOnScroll>
         <div className={styles.backgroundWrapper}>
           <div className="container">
             <h2 className={styles.teamMembersTitle}>Meet The Team</h2>
@@ -192,16 +217,19 @@ export default function HomepageFeatures() {
             </div>
           </div>
         </div>
+        </ShrinkOnScroll></FadeInOnScroll>
 
 
         <div className={styles.spacing}></div>
 
+        <FadeInOnScroll><ShrinkOnScroll>
         <div>
             <GanttChart
               title="Project Timeline"
               text={gantt.body}
             />
         </div>
+        </ShrinkOnScroll></FadeInOnScroll>
 
         <div className={styles.spacing}></div>
       </div>
