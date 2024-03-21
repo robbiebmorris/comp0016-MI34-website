@@ -1,0 +1,9 @@
+.fadeInOnScroll {
+    /* background-color: red; */
+    opacity: 0;
+    transition: opacity 2s ease;
+}
+
+.fadeInOnScroll.visible {
+     opacity: 1;
+}

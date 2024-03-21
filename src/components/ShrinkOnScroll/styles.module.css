@@ -1,0 +1,11 @@
+.shrinkOnScroll {
+    /* margin: 20px auto; */
+    transition: all 1s ease; /* Adding transition for smooth shrinking effect */
+    /* height: 300px; */
+    transform: scale(1.1);
+  }
+  
+  .shrink {
+    transform: scale(1); /* Shrinking the div to 80% of its original size */
+  }
+  
