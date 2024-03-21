@@ -21,7 +21,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Requirements',
-      items: ['requirements/requirements-home', 'requirements/gathering-requirements', 'requirements/personas', 'requirements/moscow'],
+      items: ['requirements/requirements-home'],
     },
   ],
 
@@ -65,14 +65,14 @@ const sidebars = {
     },
   ],
 
-//   evaluationSidebar: [
-//     {
-//       type: 'category',
-//       label: 'Evaluation',
-//       items: ['evaluation/evaluation-home'],
-//       className: 'hidden'
-//     },
-//   ],
+  evaluationSidebar: [
+    {
+      type: 'category',
+      label: 'Evaluation',
+      items: ['evaluation/evaluation-home'],
+    //   className: 'hidden'
+    },
+  ],
 
   appendicesSidebar: [
     {
