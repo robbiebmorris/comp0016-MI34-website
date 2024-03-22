@@ -20,27 +20,27 @@ Our testing stratergy followed the test-driven-development principle throughout 
 
 <div class="img-center">
 
-| Automated Tests    | Manual Tests              |
-|--------------------|---------------------------|
-| Instrumented Tests | User Acceptance Tests     |
-| Integration Tests  | Compatability and Tests   |
-| Performance Tests  |                           |
+| Automated Tests           | Manual Tests              |
+|---------------------------|---------------------------|
+| Instrumented (Unit) Tests | User Acceptance Tests     |
+| Integration Tests         | Compatability and Tests   |
+| Performance Tests         |                           |
 
 </div>
 
-## Instrumented Tests
+## Instrumented (Unit) Tests
 
-Instrumented tests in Android are a crucial part of the testing strategy for Android applications. These tests are designed to run on physical devices or emulators and simulate user interactions with the app. They are performed to ensure that the app functions correctly in a real-world environment and to validate its behavior across different devices, screen sizes, and operating system versions.Instrumented tests provide a higher level of confidence in the app's functionality, as they simulate real user interactions and validate the app's behavior against expected outcomes.
+We used instrumented testing on the majorirty of our classes such as fragments, activities, dialogs and bluetooth components due to their use of Android dependencies. This meant they could not be run on the standard JVM and be tested using standard unit tests. These instrumented tests are written in the same way as unit tests, and each test a small unit of the apps components. The tools we used for instrumented testing are Espresso, Mockito, UiAutomator, JUnit4 and AndroidX Fragment-Testing.
 
-We used instrumented testing on the majorirty of our classes such as fragments, activities, dialogs and bluetooth components due to their use of the Android framework and UI components. This meant they could not be run on the standard JVM and be tested using standard unit tests. The tools we used for instrumented testing are Espresso, Mockito, UiAutomator, JUnit4 and AndroidX Fragment-Testing.
+Instrumented tests in Android are a crucial part of the testing strategy for Android applications. These tests are designed to run on physical devices or emulators and simulate user interactions with the app. They are performed to ensure that app components function correctly in a real-world environment. Instrumented tests provide a higher level of confidence in the app's functionality, as they simulate real user interactions and validate the app's behavior against expected outcomes.
 
 <div class="img-center"> ![Testing Frameworks](../../static/img/testing/testing_logos.png) </div>
 
 AndroidX Fragment-Testing allowed us to launch and test fragments and activities in isolation to the full app. We then used Espresso to simulate user interactions and make assertions on UI components to test the UI and UiAutomator to interact with system-level UI elements such as permission requests. We combined this with Mockito to mock objects of our classes to simulate their behaviour, we could they insert them into our tests to simulate a variety of scenarios. Finally, we made use of JUnit to make assertions about the state of our objects during tests.
 
-An example UI test on a fragment is shown below:
+An example test which verifies that users cannot enter invalid MAC addresses is shown below:
 
-```jsx title="/src/androidTest/java/com/example/comp0016_group23_app/fragments/bluetooth/AddManualFragment.java"
+```jsx title="/src/androidTest/java/com/example/comp0016_group23_app/fragments/bluetooth/AddManualFragmentTest.java"
 public class AddManualFragmentTest {
     private FragmentScenario<AddManualFragment> scenario;
     @Mock
@@ -88,6 +88,12 @@ Insert test cases picture here**
 Integration tests were used to test how the bluetooth component interacted as a whole and with the Android framework. Alot of the same testing frameworks were used for this and we tried to simulate as much of the bluetooth functionality as possible to ensure eveything worked as intended. AndroidX allows us to launch an activity within our test class, we then created a blank TestActivity as to isolate the bluetooth component as much as possible so we could perform tests on it's functionality.
 
 <div class="img-center"> ![Testing Frameworks](../../static/img/testing/integration_test.png) </div>
+
+## Testing Coverage
+
+Using the Jacoco code coverage library we measured that xx% of our code was coverged by our automated testing:
+
+<!--  Insert code coverage picture here -->
 
 ## Performace Tests
 

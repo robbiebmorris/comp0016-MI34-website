@@ -11,20 +11,20 @@ We a pleased that our product completes 100% of the MUST and SHOULD and some of 
 
 | ID | Requirement | Priority | Completed | Contributors |
 |--|--|--|--|--|
-| 1 | Android app that establishes Bluetooth connections with Smart TV, computer of tablet | Must | Y | Hugh, Ulk, Robbie |
-| 2 | Bluetooth connection should not require additional software | Must | Y | Hugh, Ulk, Robbie |
-| 3 | Mouse controller | Must | Y | Hugh |
-| 4 | Keyboard controller | Must | Y | Ulk |
-| 5 | Gamepad controller | Must | Y | Robbie |
-| 6 | MotionInput support and integration for Face, Hands and Eyegaze | Must | Y | Hugh + Masters Team's |
-| 7 | Settings page | Must | Y | Hugh |
-| 8 | Dark and light Mode | Should | Y | Hugh |
-| 9 | Speech input to control app navigation | Should | Y | Hugh + Masters Teams's |
-| 10 | Speech controlled keyboard over Bluetooth | Should | Y | Ulk + Masters Team's |
-| 11 | Auto Bluetooth reconnect setting | Could | Y | Hugh |
-| 12 | Make the device discoverable to connect from other devices | Could | N | N/A |
-| 13 | Ability to add and remove key-binds for MotionInput mode in settings | Could | N | N/A |
-| 14 | Profiles to retain settings and presets for each user | Wont | N | N/A |
+| 1 | Android app that establishes Bluetooth connections with Smart TV, computer of tablet | Must | &#10003; | Hugh, Ulk, Robbie |
+| 2 | Bluetooth connection should not require additional software | Must | &#10003; | Hugh, Ulk, Robbie |
+| 3 | Mouse controller | Must | &#10003; | Hugh |
+| 4 | Keyboard controller | Must | &#10003; | Ulk |
+| 5 | Gamepad controller | Must | &#10003; | Robbie |
+| 6 | MotionInput support and integration for Face, Hands and Eyegaze | Must | &#10003; | Hugh + Masters Team's |
+| 7 | Settings page | Must | &#10003; | Hugh |
+| 8 | Dark and light Mode | Should | &#10003; | Hugh |
+| 9 | Speech input to control app navigation | Should | &#10003; | Hugh + Masters Teams's |
+| 10 | Speech controlled keyboard over Bluetooth | Should | &#10003; | Ulk + Masters Team's |
+| 11 | Auto Bluetooth reconnect setting | Could | &#10003; | Hugh |
+| 12 | Make the device discoverable to connect from other devices | Could | &#10007; | N/A |
+| 13 | Ability to add and remove key-binds for MotionInput mode in settings | Could | &#10007; | N/A |
+| 14 | Profiles to retain settings and presets for each user | Wont | &#10007; | N/A |
 
 <!-- Do we also need to do this for non-functional? -->
 
