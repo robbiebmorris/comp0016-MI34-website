@@ -4,8 +4,9 @@ import TabItem from '@theme/TabItem';
 
 # Requirements
 
-## Project Background
+---
 
+## Project Background
 
 Accessibility to digital tools and devices is becoming increasingly crucial, and yet many individuals, particularly those with disabilities or confined to hospital settings, face significant challenges in harnessing the benefits of modern technology due to limitations in motor control. Simple activities like operating a TV can become arduous tasks for them, highlighting the pressing need for innovative solutions. MotionInput is a project lead by UCL that has spanned over multiple years of development with the goal of addressing this issue. It aims to transform everyday computer web-cams into virtual a controller for your computer using a range of inputs, such as: Face tracking, Eye tracking, Hotspot tracking and Movement tracking. 
 
