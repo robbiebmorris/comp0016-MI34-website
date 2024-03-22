@@ -1,6 +1,10 @@
 # UI Design
 
+---
+
 ## Design Principles
+
+To the best of our abilities, we designed our user interface with the following design principles in mind.
 
 ### Visibility
 
@@ -59,4 +63,3 @@ The final design can be seen in the interactive wire-frame below:
 <div class="iframe-container">
     <iframe width="450" height="885" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FBv8zm0SeGpPrsAKFTIN2QQ%2FUI-WireFrame%3Ftype%3Ddesign%26node-id%3D36-8337%26t%3DnUPZhBYCeKxlzgcw-1%26scaling%3Dmin-zoom%26page-id%3D0%253A1%26starting-point-node-id%3D36%253A8337%26mode%3Ddesign" allowfullscreen></iframe>
 </div>
- 

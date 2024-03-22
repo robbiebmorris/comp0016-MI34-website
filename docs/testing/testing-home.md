@@ -155,7 +155,7 @@ We devised a set of test cases to be performed, followed by requesting feedback 
 
 <div class="img-center">
 
-| Acceptance Requirement | Strongly Disagree | Disagree | Agree | Strongly Disagree | Comments |
+| Acceptance Requirement | Strongly Disagree | Disagree | Agree | Strongly Agree | Comments |
 |--|--|--|--|--|--|
 | Is the UI navigation easy | 0 | 0 | 0 | 4 | + The navigation bar makes it easy. |
 | Was the user experience good | 0 | 0 | 0 | 4 | + The UI is intuitive and I could setup Bluetooth easily |

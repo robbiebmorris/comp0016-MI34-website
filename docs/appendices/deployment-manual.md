@@ -4,7 +4,7 @@ MotionInput Bluetooth controller has been built in Android Studio and written in
 
 **Note: The Andoid Studio emulator doesn't have any Bluetooth or Camera functionailty, therefore the main features of the app are limited to physical devices.**
 
-## Prequisits
+## Prerequisites
 
 - Git
 - Android Studio (Minimum Version Required: Iguana)
@@ -20,7 +20,7 @@ Clone the repository to your machine:
 git clone https://github.com/MotionInput/MotionInput-Bluetooth-Controller.git
 ```
 
-In Android Studio open the cloned repository and open it as a project. Then under Gradle scripts select the ```local.properties``` file and modify ```sdk.dir``` to be the path to your local install of the Anroid SDK. This might look something like ```/Users/your_name/Library/Android/sdk```. This may already be configured already - if so you don't need to change anything.
+In Android Studio, open the cloned repository as a project. Then under Gradle scripts select the ```local.properties``` file and modify ```sdk.dir``` to be the path to your local install of the Anroid SDK. This might look something like ```/Users/your_name/Library/Android/sdk```. This may already be configured already - if so you don't need to change anything.
 
 You might also need to specify the JDK version gradle will use to build the project:
 

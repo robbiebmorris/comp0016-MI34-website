@@ -28,7 +28,7 @@ Bluetooth Keyboard & Mouse <sub>[2]</sub> uses the Bluetooth HID protocol to con
 
 ### Review #2: RemoteBluetoothControllerAndroidApp
 
-RemoteBluetoothControllerAndroidApp <sub>[k]</sub> is another example of an android app which implements bluetooth functionality for the mouse. This application takes a unique approach to implementing their input methods for the mouse. The supported input modes are:
+RemoteBluetoothControllerAndroidApp <sub>[3]</sub> is another example of an android app which implements bluetooth functionality for the mouse. This application takes a unique approach to implementing their input methods for the mouse. The supported input modes are:
 
 - A standard on-screen joystick
 - Android device gyroscope data
@@ -38,11 +38,13 @@ The gyroscope mode uses data from the gyroscope built into the phone in order to
 
 These unique mouse controller modes were taken into consideration as an option while designing our own mouse bluetooth controller. Some of these controls might not be optimal for all use cases of the manual mouse method, but as we are focusing on integrating MotionInput into our app, different input types could be extremely useful to integrate with MotionInput for Android. For example, if we implemented the tank drive mode, the MotionInput fragments would only have to send two integer values to the app in order to control the mouse. Some input methods are significantly more compatible with human gesturing and allow for more accurate machine learning models.
 
-RemoteBluetoothControllerAndroidApp <sub>[k]</sub> also makes use of the same bluetooth HID protocol as Bluetooth Keyboard & Mouse <sub>[2]</sub> did, indicating that this is probably a relatively standard and reliable solution to implementing bluetooth capability.
+RemoteBluetoothControllerAndroidApp <sub>[3]</sub> also makes use of the same bluetooth HID protocol as Bluetooth Keyboard & Mouse <sub>[2]</sub> did, indicating that this is probably a relatively standard and reliable solution to implementing bluetooth capability.
 
-References 
+# references (section 1. research into Bluetooth Keyboard & Mouse App) (Need to do properly later)
 
-[1] https://github.com/mikebowyer/RemoteBluetoothControllerAndroidApp
+[1] https://www.businessinsider.in/tech/news/how-to-use-an-android-phone-as-a-bluetooth-mouse-with-a-pc-or-laptop/articleshow/91920293.cms
+[2] https://play.google.com/store/apps/details?id=io.appground.blek&hl=en&gl=US
+[3] https://github.com/mikebowyer/RemoteBluetoothControllerAndroidApp
 
 
 ### Review #3: android-pc-controller
@@ -50,7 +52,7 @@ References
 can delete maybe
 Uses trackpad rather than joycon
 
-References
+# References (do properly later)
 
 [1] https://github.com/wncc/android-pc-controller
 
@@ -116,12 +118,6 @@ After conducting extensive background reseach we were able to make the following
 
 </div>
 
-
-## Links used for references (section 1. research into Bluetooth Keyboard & Mouse App) (Need to do properly later)
-
-[1] https://www.businessinsider.in/tech/news/how-to-use-an-android-phone-as-a-bluetooth-mouse-with-a-pc-or-laptop/articleshow/91920293.cms
-[2] https://play.google.com/store/apps/details?id=io.appground.blek&hl=en&gl=US
-
 ## Links used for references (Need to do properly later)
 
 [1] https://www.toptal.com/kotlin/kotlin-vs-java
@@ -129,3 +125,11 @@ After conducting extensive background reseach we were able to make the following
 [3] https://stackshare.io/stackups/android-vs-flutter#:~:text=In%20summary%2C%20Android%20SDK%20allows,model%20and%20a%20growing%20community.
 [4] https://www.browserstack.com/guide/flutter-vs-android-studio
 
+
+# IGNORE
+
+- [1] Business Insider (2022, May, 1). How to use an Android phone as a Bluetooth mouse with a PC or laptop [Online]. Available: https://www.businessinsider.in/tech/news/how-to-use-an-android-phone-as-a-bluetooth-mouse-with-a-pc-or-laptop/articleshow/91920293.cms
+- [2] 
+
+
+[1] Composables (2023, Oct. 1). Android Distribution Chart [Online]. Available: https://www.composables.com/tools/distribution-chart
