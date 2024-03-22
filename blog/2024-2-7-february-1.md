@@ -26,4 +26,4 @@ The development of this feature involved several technical considerations:
 - **Hiding the Text Box**: To maintain a clean and uncluttered interface, we chose to hide the textbox on the app while ensuring the keyboard remains responsive to user input on the target device.
 - **Bluetooth HID Protocol**: Each keystroke is captured and sent via the Bluetooth HID protocol to the target device. This ensures real-time text input and response.
 
-<div class="img-center"> ![Not Supported Pupup Image](../static/img/ui/keyboard.png) </div>
+<div class="img-center"> ![Keyboard Image](../static/img/ui/keyboard.png) </div>
