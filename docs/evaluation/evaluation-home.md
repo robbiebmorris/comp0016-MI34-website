@@ -2,13 +2,26 @@
 
 ## MoSCoW List Evaluation
 
-We a pleased that our product completes 100% of the MUST, SHOULD and COULD MoSCoW requirements. The full achievement table is shown below:
+We a pleased that our product completes 100% of the MUST and SHOULD and some of the COULD MoSCoW requirements. The full achievement table is shown below:
 
 <div class="img-center">
 
 | ID | Requirement | Priority | Completed | Contributors |
 |--|--|--|--|--|
-| | | | | |
+| 1 | Android app that establishes Bluetooth connections with Smart TV, computer of tablet | Must | Y | Hugh, Ulk, Robbie |
+| 2 | Bluetooth connection should not require additional software | Must | Y | Hugh, Ulk, Robbie |
+| 3 | Mouse controller | Must | Y | Hugh |
+| 4 | Keyboard controller | Must | Y | Ulk |
+| 5 | Gamepad controller | Must | Y | Robbie |
+| 6 | MotionInput support and integration for Face, Hands and Eyegaze | Must | Y | Hugh + Masters Team's |
+| 7 | Settings page | Must | Y | Hugh |
+| 8 | Dark and light Mode | Should | Y | Hugh |
+| 9 | Speech input to control app navigation | Should | Y | Hugh + Masters Teams's |
+| 10 | Speech controlled keyboard over Bluetooth | Should | Y | Ulk + Masters Team's |
+| 11 | Auto Bluetooth reconnect setting | Could | Y | Hugh |
+| 12 | Make the device discoverable to connect from other devices | Could | N | N/A |
+| 13 | Ability to add and remove key-binds for MotionInput mode in settings | Could | N | N/A |
+| 14 | Profiles to retain settings and presets for each user | Wont | N | N/A |
 
 </div>
 
@@ -93,3 +106,13 @@ Each class is dedicated to a distinct process, following encapsulation principle
 The project was effectively coordinated through weekly lab sessions where tasks were organized and distributed among team members. GitHub's integrated tools were employed for issue tracking and ensuring that only functional code was merged into the main branch via pull requests. A Gantt chart was utilized to establish a project timeline and meet deadlines, facilitating successful completion. Additionally, weekly meetings were held with our project partner to communicate progress and gather feedback.
 
 ## Future Work
+
+If we had more time we would extend the project in the following ways:
+
+1. Improve the apps performance even further. We would want the app to run even smoother on hardware with lower specs to make the application accessible for all ranges of devices. We would consider utilising threading further to optimise certain components and reduce complexity in other places.
+
+2. Add user profiles so that multiple people can be use the same device. This would allow them to save their settings and presets to their profile and not the app itself. This would mean they can switch to their prefered configuration easily without having to modify all the settings individually meaning seamless integration between users.
+
+3. Make the app discoverable to other devices to expand the supported set of ways users can pair with target devices. Since some devices can only pair via this method it will make the app accessible to larger amount of potential devices.
+
+4. Extend the layout configurations to work in landscape mode. We would create new layout pages for each screen with the corresponding landscape orientation. This might make the user experience better when using the app on Android tablets.
