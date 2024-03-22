@@ -7,9 +7,9 @@ MotionInput Bluetooth controller has been built in Android Studio and written in
 ## Prequisits
 
 - Git
-- Android Studio
+- Android Studio (Minimum Version Required: Iguana)
 - Java Development Kit (JDK)
-- Android SDK
+- Android SDK (This is usually installed alongside Android Studio)
 - Gradle (This is usally installed alongside Android Studio)
 
 ## Configure the Repository
@@ -17,10 +17,10 @@ MotionInput Bluetooth controller has been built in Android Studio and written in
 Clone the repository to your machine:
 
 ```
-git clone https://github.com/Ulk-G/COMP0016-Group23-App.git
+git clone https://github.com/MotionInput/MotionInput-Bluetooth-Controller.git
 ```
 
-In Android Studio open the cloned repository and open it as a project. Then under Gradle scripts select the ```local.properties``` file and modify ```sdk.dir``` to be the path to your local install of the Anroid SDK. This might look something like ```/Users/your_name/Library/Android/sdk```
+In Android Studio open the cloned repository and open it as a project. Then under Gradle scripts select the ```local.properties``` file and modify ```sdk.dir``` to be the path to your local install of the Anroid SDK. This might look something like ```/Users/your_name/Library/Android/sdk```. This may already be configured already - if so you don't need to change anything.
 
 You might also need to specify the JDK version gradle will use to build the project:
 
@@ -36,6 +36,19 @@ On Windows:
 File > Settings... > Build, Execution, Deployment > Build Tools > Gradle
 ```
 
+Finally you need to ensure Android Studio is setup using the correct Gradle plugin version and Gradle Version. First go to:
+
+```
+File > Project Structure
+```
+
+Then, ensure:
+
+```
+Gradle version: 8.4
+Gradle plugin version: 8.3.0
+```
+
 Now check if everything is setup correctly:
 
 ```
@@ -43,7 +56,7 @@ File > Sync Project with Gradle Files
 Build > Rebuild Project
 ```
 
-Now you are ready to run. 
+After a successfull Gradle Sync Android Studio is setup and ready to run.
 
 ## Setup Android Device (Only if not using Emulator)
 

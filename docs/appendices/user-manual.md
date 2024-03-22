@@ -2,6 +2,9 @@ import UserGuideHomepage from '../../static/img/appendicies/user-manual-homepage
 import UserGuideAddDevice from '../../static/img/appendicies/user-manual-add-device.png';
 import UserGuideMouse from '../../static/img/appendicies/user-manual-mouse.png';
 import UserGuideKeyboard from '../../static/img/appendicies/user-manual-keyboard.png';
+import UserGuideGamepad from '../../static/img/appendicies/user-manual-game-pad.png';
+import UserGuideMotionInput from '../../static/img/appendicies/user-manual-motion-input.png';
+import UserGuideSettingsHelp from '../../static/img/appendicies/user-manual-settings-and-help.png';
 
 # User Manual
 
@@ -73,11 +76,55 @@ You can use the keyboard in manual mode using a keyboard on the app to controll 
 3. Return can be used in the same way as a normal keyboard.
 4. Press here to see special characters. The app supports all ASCII characters.
 5. Press here to hide the keyboard when finished.
+6. Press here to use keyboard arrow keys
+7. Press here for volume control
+8. Control, Alt/ Option and Command for keyboard shortcuts
 
 ## Using the Game Pad Manually
 
 You can use the Game Pad as a controller to controll devices that would usually need a controller to use, for example a video game:
 
+<div class="img-center">
+    <img src={UserGuideGamepad} alt="UserGuideGamepad" style={{height: 600}} />
+</div>
+
+<br></br>
+
+1. Switch to MotionInput mode.
+2. Left game joystick.
+3. Right game joystick.
+4. Game buttons.
+
 ## Using MotionInput Mode.
 
 Mouse, Keyboard and Game Pad can all be used using MotionInput mode to controll them using Hand, Face or Eye gestures instead of manual input:
+
+<div class="img-center">
+    <img src={UserGuideMotionInput} alt="UserGuideMotionInput" style={{height: 600}} />
+</div>
+
+<br></br>
+
+1. Change the MotionInput mode to Face or Hands.
+2. Eyegaze Joystick - This tracks where your eyes are looking.
+3. Eyegaze settings.
+4. Change the MotionInput mode to Face or Eyes.
+5. Hands tracking - Tracks the gestures and movement of your hands.
+6. Hands settings.
+7. Face Tracking - Tracks the movement and position of your face.
+8. Change the MotionInput mode to Hands or Eyes.
+9. Face settings.
+
+The configuration of all MotionInput modes can be modifed and fine tuned to user preference in each of the respective settings pages.
+
+## Settings and Help Popups
+
+All screens have their own settings and user help page (Except manual keyboard which only has a help page) which can be opened using the icons in the top-right of the screen. An example of these pages are shown below:
+
+<div class="img-center">
+    <img src={UserGuideSettingsHelp} alt="UserGuideSettingsHelp" style={{height: 600}} />
+</div>
+
+<br></br>
+
+When you click the either settings or help icon when viewing a specific page the help or settings page that relates to the page will open automatically. For example, the General Settings and Bluetooth user guide are shown when viewing the homepage.
