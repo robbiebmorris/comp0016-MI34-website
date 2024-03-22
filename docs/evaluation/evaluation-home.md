@@ -23,6 +23,8 @@ We a pleased that our product completes 100% of the MUST and SHOULD and some of 
 | 13 | Ability to add and remove key-binds for MotionInput mode in settings | Could | N | N/A |
 | 14 | Profiles to retain settings and presets for each user | Wont | N | N/A |
 
+<!-- Do we also need to do this for non-functional? -->
+
 </div>
 
 ## Known Bug List
