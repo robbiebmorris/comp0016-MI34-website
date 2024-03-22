@@ -92,3 +92,11 @@ On the top navigation bar in Andorid Studio ensure the name of the your connecte
 Finally, click the green arrow to the right of this box to build, install and launch the app on your device.
 
 <div class="img-center"> ![Build App On Device](../../static/img/appendicies/build-toolbar.png) </div>
+
+## Install Directly from APK via USB
+
+1. Make sure USB debugging is enabled by following the steps above
+2. Plug your phone into your computer with a USB cable, and it'll recognise the phone like it would a memory stick.
+3. Your phone will show up as another drive in File Explorer.
+4. Move the APK file you downloaded into the appropriate folder on your phone, which might be called Download or /sdcard/download, or an equivalent.
+5. Once the file is transferred, use a file explorer app on your phone to tap the APK file and install the app.
