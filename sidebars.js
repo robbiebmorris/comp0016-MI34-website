@@ -82,8 +82,7 @@ const sidebars = {
       items: [
         'appendices/user-manual',
         'appendices/deployment-manual',
-        'appendices/GDPR',
-        'appendices/privacy-of-data',
+        'appendices/legal-statement',
         'appendices/monthly-video'
       ],
     },
