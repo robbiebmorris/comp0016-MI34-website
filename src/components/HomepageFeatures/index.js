@@ -9,7 +9,7 @@ import ShrinkOnScroll from '../ShrinkOnScroll';
 import React from 'react';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
+import TeamMemberCard from '../TeamMemberCard';
 
 const FeatureList = [
   {
@@ -17,8 +17,8 @@ const FeatureList = [
     Svg: require('@site/static/img/homepage/legacymilogo.svg').default,
     description: (
       <>
-        MI Bluetooth Controller was designed with ease of use in mind. It's simple,
-        yet effectice UI is designed to be accessible for everyone.
+        MI Bluetooth Controller was designed with ease of use in mind. Its simple
+        yet effectice UI is made to be accessible for everyone.
       </>
     ),
   },
@@ -37,9 +37,8 @@ const FeatureList = [
     Svg: require('@site/static/img/homepage/gamepadmilogo.svg').default,
     description: (
       <>
-        Designed to operate on various platforms, including Windows, MacOS, iPadOS,
-        Android and AndroidTV. Easily connect without any additional 
-        software.
+        Designed to operate on platforms including Windows, MacOS, iPadOS,
+        Android and AndroidTV. Easily connect without additional software.
       </>
     ),
   },
@@ -61,14 +60,11 @@ function Feature({Svg, title, description}) {
 
 const abstract = {
   abstract: `
-  Currently available forms of interaction with computers and technology is not always accessible to everyone. For example, current patients in hospitals are foreced into using small and impractical TV sets 
-  for entertainment which come with hard to use controls. For patients are less mobile, this is nearly impossible to use.
+  In today's technology-driven world, accessibility to digital tools and devices is increasingly crucial. However, many individuals, particularly those with disabilities or confined to hospital settings, face significant challenges in harnessing the benefits of modern technology due to limitations in motor control. Simple activities like operating a TV can become arduous tasks for them, highlighting the pressing need for innovative solutions.
   <br/><br/>
-  With a MotionInput Bluetooth controller setup, patients could control a TV on the wall hands free with eye gaze, facial movements, or any of the other options MotionInput provides,
-  leading to a considerably more comfortable viewing experience. Our solution allows users to replace their mouse and keyboard with any android device and supports a large range of devices users may have.
+  Our team developed a solution to this problem that would empower disabled individuals and hospital patients to interact with technology seamlessly. Through MotionInput for Android, we devised a versatile Bluetooth controller setup that enables users to control a TV or any Bluetooth-enabled device hands-free, utilizing a variety of input methods such as eye gaze, facial movements, and more. By leveraging this technology, users can navigate through interfaces, access entertainment, and engage with digital content with unprecedented ease and comfort, with a significantly larger set of compatible devices than before.
   <br/><br/>
-  As a part of the MotionInput for Android, our team focused on implementing Bluetooth connectivity and building the supporting app while also laying the foundations for further development. 
-  The architecture is designed to be developer friendly, allowing future developers to extend the existing components but also add their own components as MotionInput for Android becomes more developed.
+  The culmination of our efforts is a fully functional Android application that is primed for deployment on the Android store. With MotionInput integrated to recognize both hand and facial gestures, and upcoming compatibility with eye gaze technology, our solution promises to revolutionize the accessibility landscape. Beyond the technical achievements, the real impact lies in the tangible difference it could make in the lives of countless individuals, offering them independence, convenience, and an enhanced quality of life.
   `
 }
 
@@ -109,42 +105,42 @@ const team_members = {
 
 const team_members_abstract = {
   hugh: `
-  Roles: Client liaison, Programmer, Tester
+  Client Liaison, Programmer, Tester
   `,
   robbie: `
-  Roles: Report editor, UI Designer, Researcher
+  Report Editor, UI Designer, Researcher
   `,
   ulk: `
-  Roles: Programmer, UI Designer, Tester
+  Programmer, UI Designer, Tester
   `
 }
 
 const team_member_links = {
-    hugh: {"linkedIn": "?",
-            "github": "?"},
-    robbie: {"linkedIn": "?",
-            "github": "?"},
-    ulk: {"linkedIn": "?",
-            "github": "?"},
+    hugh: {"linkedIn": "https://www.linkedin.com/in/hugh-stanway-764391252/",
+            "github": "https://github.com/HughStanway"},
+    robbie: {"linkedIn": "https://www.linkedin.com/in/robbiebmorris/",
+            "github": "https://github.com/robbiebmorris"},
+    ulk: {"linkedIn": "https://www.linkedin.com/in/ulk-gerguri-1a336120a/",
+            "github": "https://github.com/Ulk-G"},
 }
 
-function TeamMemberCard({ member }) {
-  return (
-    <div className={styles.teamMemberCard}>
-      <Card style={{ width: '18rem', padding: '2rem' }}>
-        <Card.Img variant="top" src={testImage} rounded />
-        <Card.Body className={styles.cardBody}>
-          <Card.Title className={styles.cardTitle}>
-          {team_members[member]}
-                <Card.Link href={team_member_links[member].github}><FontAwesomeIcon icon={faGithub} className={styles.icon} /></Card.Link>
-                <Card.Link href={team_member_links[member].linkedIn}><FontAwesomeIcon icon={faLinkedin} className={styles.icon} /></Card.Link>
-          </Card.Title>
-          <Card.Text className={styles.cardText}>{team_members_abstract[member]}</Card.Text>
-          </Card.Body>
-      </Card>
-    </div>
-  );
-}
+// function TeamMemberCard({ member }) {
+//   return (
+//     <div className={styles.teamMemberCard}>
+//       <Card style={{ width: '18rem', padding: '2rem' }}>
+//         <Card.Img variant="top" src={testImage} rounded />
+//         <Card.Body className={styles.cardBody}>
+//           <Card.Title className={styles.cardTitle}>
+//           {team_members[member]}
+//                 <Card.Link href={team_member_links[member].github}><FontAwesomeIcon icon={faGithub} className={styles.icon} /></Card.Link>
+//                 <Card.Link href={team_member_links[member].linkedIn}><FontAwesomeIcon icon={faLinkedin} className={styles.icon} /></Card.Link>
+//           </Card.Title>
+//           <Card.Text className={styles.cardText}>{team_members_abstract[member]}</Card.Text>
+//           </Card.Body>
+//       </Card>
+//     </div>
+//   );
+// }
 
 const gantt = {
   body: `

@@ -64,7 +64,8 @@
         @supports (background-clip: text) or (-webkit-background-clip: text) {
           background-clip: text;
   
-          background: linear-gradient(50deg, #65B1F6 12%, #85C7FF 20%, #6EE7B7 35%, #4CAFFF 55%, #1D8DF7 80%, #65B1F6 90%);
+          background: linear-gradient(50deg, #FF6B6B 12%, #FFE66D 20%, #6EE7B7 35%, #65B1F6 55%, #F195B8 80%, #FF6B6B 90%);
+
           background-size: 1000% 1000%;
   
           animation: 15s linear 0s infinite alternate home-header-pulse;
@@ -102,7 +103,8 @@
       width: 100%;
       padding-top: 100%;
   
-      background: linear-gradient(50deg, #65B1F6 12%, #85C7FF 20%, #6EE7B7 35%, #4CAFFF 55%, #1D8DF7 80%, #65B1F6 90%);
+      background: linear-gradient(50deg, #FF6B6B 12%, #FFE66D 20%, #6EE7B7 35%, #65B1F6 55%, #F195B8 80%, #FF6B6B 90%);
+
       background-size: 1000% 1000%;
 
       mask-image: url(../../static/img/pnglogo.png);

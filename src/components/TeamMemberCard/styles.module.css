@@ -1,0 +1,44 @@
+.teamMemberCard {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 1rem;
+  }
+  
+  .cardImage {
+    width: 100%;
+    height: 30vh;
+  }
+  
+  .cardBody {
+    padding: 20px;
+    padding-bottom: 0px;
+  }
+  
+  .cardTitle {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+  }
+  
+  .icons {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  
+  .iconLink {
+    margin-right: 10px;
+    color: #333;
+  }
+  
+  .cardText {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+  
