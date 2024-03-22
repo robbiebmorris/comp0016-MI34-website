@@ -28,7 +28,7 @@ Our testing stratergy followed the test-driven-development principle throughout 
 
 </div>
 
-## Instrumented (Unit) Tests
+## Instrumented (Unit) Testing
 
 We used instrumented testing on the majorirty of our classes such as fragments, activities, dialogs and bluetooth components due to their use of Android dependencies. This meant they could not be run on the standard JVM and be tested using standard unit tests. These instrumented tests are written in the same way as unit tests, and each test a small unit of the apps components. The tools we used for instrumented testing are Espresso, Mockito, UiAutomator, JUnit4 and AndroidX Fragment-Testing.
 
@@ -83,7 +83,7 @@ public class AddManualFragmentTest {
 
 Insert test cases picture here**
 
-## Integration Tests
+## Integration Testing
 
 Integration tests were used to test how the bluetooth component interacted as a whole and with the Android framework. Alot of the same testing frameworks were used for this and we tried to simulate as much of the bluetooth functionality as possible to ensure eveything worked as intended. AndroidX allows us to launch an activity within our test class, we then created a blank TestActivity as to isolate the bluetooth component as much as possible so we could perform tests on it's functionality.
 
@@ -95,7 +95,7 @@ Using the Jacoco code coverage library we measured that xx% of our code was cove
 
 <!--  Insert code coverage picture here -->
 
-## Performace Tests
+## Performace Testing
 
 We tested our apps performance by measuring it's CPU usage and memory usage using the provided profiler by Android Studio. This allowed us to see the average overall performance of our app over a prolonged test but also gave us insight into how CPU and memory usage changed when we interacted with certain functions. This allowed us to identify any performance bottlenecks but also draw conclusions about the apps overall performance and usability.
 
@@ -129,8 +129,50 @@ We also conducted installation and testing of our app on a Chromebook due to its
 
 The app itself can be installed and used on Android devices that are Bluetooth enabled and running Android version 11.0 and above. As of October 2023, according to statistics calculated by Google, this covers the majority of active android devices. Thefore we can conclude our app is deliverable and accessible to a large proportion of users. <sub>[1]</sub>
 
-## User Acceptance Tests
+## User Acceptance Testing
 
-## Links used for references (Need to do properly later)
+### Testers
 
-[1] https://www.composables.com/tools/distribution-chart
+The testers include:
+
+1. **Emily** - 18 year old student.
+2. **James** - 21 year old student.
+3. **Olivia** - 45 year old parent.
+4. **Alex** - 39 year old producer.
+
+***Note: These were all real-world testers, however, their identities have been made anonymous***
+
+### Test Cases
+
+We devised a set of test cases to be performed, followed by requesting feedback on a scale and any additional comments provided.
+
+1. **Test Case 1:** We ask the user to find and pair to a new device, then connect to it.
+2. **Test Case 2:** We asked the user to browse the web using the manual Mouse and Keyboard
+3. **Test Case 3:** We asked the user to play Minecraft using the Gamepad
+4. **Test Case 4:** We ask the user to play online games, including Subway Surfers and Cut the Rope, using MotionInput mode.
+
+### Feedback from Users
+
+<div class="img-center">
+
+| Acceptance Requirement | Strongly Disagree | Disagree | Agree | Strongly Disagree | Comments |
+|--|--|--|--|--|--|
+| Is the UI navigation easy | 0 | 0 | 0 | 4 | + The navigation bar makes it easy. |
+| Was the user experience good | 0 | 0 | 0 | 4 | + The UI is intuitive and I could setup Bluetooth easily |
+| Could you connect to a device | 0 | 0 | 0 | 4 | + Bluetooth scan and connection is easy to understand |
+| Were you able to use the trackpad easily | 0 | 0 | 1 | 3 | - I struggled due to my limited movement |
+| Did voice navigation work | 0 | 0 | 1 | 3 | + Was able to control the app using the set commands |
+| Did you find the user guides useful | 0 | 0 | 2 | 2 | + They gice a good overview of the features |
+| Could you play the games | 0 | 0 | 1 | 3 | - The sensitivity could be reduced |
+| Was there any Bluetooth delay | 0 | 0 | 0 | 4 | + Mouse and Keyboard worked smoothly without lag |
+| Were you able to use MotionInput | 0 | 0 | 0 | 4 | + Very easy to switch to MotionInput mode and works without any complicated setup |
+
+</div>
+
+### Conclusion
+
+We were happy with the feedback recieved from the users as they showed a positive overall experience. Their feedback allowed us to make the adjustments necessary for 
+
+## References
+
+[1] Composables (2023, Oct. 1). *Android Distribution Chart* [Online]. Available: https://www.composables.com/tools/distribution-chart
