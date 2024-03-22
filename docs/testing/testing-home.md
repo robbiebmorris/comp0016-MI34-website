@@ -171,7 +171,8 @@ We devised a set of test cases to be performed, followed by requesting feedback 
 
 ### Conclusion
 
-We were happy with the feedback recieved from the users as they showed a positive overall experience. Their feedback allowed us to make the adjustments necessary for 
+
+We were delighted by the feedback from users, indicating an overall positive experience. Their valuable input enabled us to pinpoint and rectify any sensitivity issues with mouse inputs effectively. Acting upon this feedback, we've implemented changes aimed at improving the user experience for all.
 
 ## References
 
