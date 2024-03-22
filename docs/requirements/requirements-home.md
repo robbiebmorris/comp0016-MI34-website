@@ -87,12 +87,54 @@ A list of use cases for our app.
 
 |**ID**|**Use case**|
 |------|------------|
-|UC1   | |
-|UC1   | |
-|UC1   | |
-|UC1   | |
-|UC1   | |
-|UC1   | |
+|UC1   | Pair and connect to the target device via Bluetooth scan. |
+|UC2   | Pair and connect to the target device manually. |
+|UC3   | Controlling the mouse movements and clicks on the target device over Bluetooth via the Mouse Controller. |
+|UC4   | Type or input keybaord commands (e.g. volume up, CMD + Q) over Bluetooth via the Keyboard Controller. |
+|UC5   | Play a game over Bluetooth via the Gamepad Controller. |
+
+### Use Case Descriptions
+
+||**Use case** |
+|----- |-------|
+|ID         | UC1 |
+|Actor      | User |
+|Description| Pair and connect to the target device via Bluetooth scan. |
+|Main Flow  | 1. User opens the app and the system displays the home page. <br></br> 2. User Clicks on the 'Start Scan' button. <br></br> 3. The system scans for bluetooth devices in the area. <br></br> 4. The user clicks on the target device from the list of devices. <br></br> 5. The system initiates a pairing between the target device and the users device. <br></br> 6. The user accepts the pop-up for pairing on both the user device and the target device. <br></br> 7. The system connects the user device to the target device. |
+|Result    | The user pairs and connects their user device with the target device. |
+
+||**Use case** |
+|----- |-------|
+|ID         | UC2 |
+|Actor      | User |
+|Description| Pair and connect to the target device manually. |
+|Main Flow  | 1. User opens the app and the system displays the home page. <br></br> 2. The user clicks the 'Manual' button. <br></br> 3. The user enters the MAC address of the device they are trying to connect to. <br></br> 4. The system initiates a pairing between the target device and the users device. <br></br> 5. The user accepts the pop-up for pairing on both the user device and the target device. <br></br> 6. The system connects the user device to the target device. |
+|Result    | The user pairs and connects their user device with the target device. |
+
+
+||**Use case** |
+|----- |-------|
+|ID         | UC3 |
+|Actor      | User |
+|Description| Scanning via Bluetooth for target devices and pairing with the intended device. |
+|Main Flow  | 1. User opens the app and the system displays the home page. <br></br> 2. The user connects and pairs their device using UC1s or UC2s flow. <br></br> 3. The user navigates to the Mouse page. <br></br> 4. User sends inputs via the Trackpad UI on the screen. <br></br> 5. The system sends the user inputs over bluetooth to the target device. |
+|Result    | The user controls the target devices mouse inputs via Bluetooth on the user device. |
+
+||**Use case** |
+|----- |-------|
+|ID         | UC4 |
+|Actor      | User |
+|Description| Type or input keybaord commands (e.g. volume up, CMD + Q) over Bluetooth via the Keyboard Controller. |
+|Main Flow  | 1. User opens the app and the system displays the home page. <br></br> 2. The user connects and pairs their device using UC1s or UC2s flow. <br></br> 3. The user navigates to the keyboard page. <br></br> 4. User sends inputs via the Keyboard UI on the screen. <br></br> 5. The system sends the user inputs over bluetooth to the target device. |
+|Result    | The user controls the target devices keyboard inputs via Bluetooth on the user device. |
+
+||**Use case** |
+|----- |-------|
+|ID         | UC5 |
+|Actor      | User |
+|Description| Play a game over Bluetooth via the Gamepad Controller. |
+|Main Flow  | 1. User opens the app and the system displays the home page. <br></br> 2. The user connects and pairs their device using UC1s or UC2s flow. <br></br> 3. The user navigates to the Gamepad page. <br></br> 4. User sends inputs via the Gamepad UI on the screen. <br></br> 5. The system sends the user inputs over bluetooth to the target device. |
+|Result    | The user provides input to a game on the target device via Bluetooth on the user device. |
 
 ## MoSCoW Requirements List
 
