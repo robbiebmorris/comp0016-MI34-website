@@ -16,6 +16,7 @@ Our aim is to develop an app that can be downloaded directly from the Android ap
 
 - Bluetooth Scan and Connection via the HID protocol.
 - Manual Controllers, including a Mouse controller, Keyboard controller, and Gamepad controller
+- MotionInput Integration with the Bluetooth Controller.
 
 We hope that the development of this app will enable easier development of more MotionInput technology in the future, and also benefit individuals who need MotionInpt in their daily lives by making it significantly more convenient and accessible.
 
@@ -74,21 +75,24 @@ Further conclusions are drawn in the MoSCoW lists at the bottom of the page.
 
 ## Use Cases
 
+### Use Case Diagram
+
 The use case diagram below highlights how the users can interact with the final product. Users will have access to three different bluetooth controller modes, including a mouse, keyboard, and gamepad. Each of these provides users with a new set of potential use cases, and widens the scope of our project's impact. The bluetooth connectivity and scan also play a key role in our apps usability.
 
 <div class="img-center"> ![Persona 2](../../static/img/requirements/use_cases_diagram.jpg) </div>
 
-Following the use case diagram, these are some potential use cases that our app could be applied to.
+###  Use Case List
 
-1. **Control Smart TVs and Devices**: Users will have the capability to seamlessly connect the Bluetooth controller to a wide array of Bluetooth-enabled devices, including smart TVs, laptops, tablets, and other compatible electronics. Once connected, the controller allows the user to execute keyboard inputs, manipulate mouse movements, and engage joystick inputs without touching their device. This versatility ensures users can interact with their devices in a manner that best suits their preferences and requirements, whether it's browsing content on a smart TV, navigating interfaces on a laptop, or controlling applications on a tablet.
+A list of use cases for our app.
 
-2. **Customizable Controls**: Recognizing the importance of personalized interaction, the app offers extensive customization options for control inputs. Users have the flexibility to tailor their control scheme by effortlessly adding or removing new key-binds for MotionInput modes through intuitive settings. This empowers users to adapt the controller to their unique preferences and accessibility requirements, ensuring a seamless and personalized user experience tailored to individual needs.
-
-3. **Gesture-Based Control**: Leveraging advanced motion input technologies such as face tracking, eye tracking, and hand movements, the controller offers innovative gesture-based control capabilities. Users can effortlessly navigate interfaces, interact with applications, and execute commands through intuitive gestures or movements, providing an intuitive and immersive user experience. Whether it's scrolling through content, selecting options, or controlling media playback, gesture-based control enhances accessibility and usability for users across various scenarios and use cases.
-
-4. **Gamepad Functionality**: Beyond traditional device control, the controller doubles as a versatile gamepad, enabling users to immerse themselves in gaming experiences without the need for a physical controller. With support for joystick inputs, users can seamlessly play a wide range of games on compatible gaming devices, enjoying immersive gameplay and interactive entertainment from the comfort of their preferred device.
-
-5. **Device Discovery and Connectivity**: Simplifying the user experience, the app facilitates seamless device discovery and connectivity, allowing users to effortlessly connect the controller to their desired devices. By making the controller discoverable, users can easily establish connections from other compatible devices, enabling quick and hassle-free setup. Additionally, the app includes features for automatic reconnection to Bluetooth devices, ensuring uninterrupted usability and minimizing disruptions caused by connection issues.
+|**ID**|**Use case**|
+|------|------------|
+|UC1   | |
+|UC1   | |
+|UC1   | |
+|UC1   | |
+|UC1   | |
+|UC1   | |
 
 ## MoSCoW Requirements List
 
@@ -120,10 +124,10 @@ This list outlines the essential features and functionalities expected in the de
   <div>
     <div>
         - Accessibility features:
-            - High contrast mode
             - Dark Mode
             - Light Mode
-        - Make the device discoverable so the controller can be connected to from another devices.
+        - Speech input support to control navigation of the app and to change settings.
+        - Bluetooth controlled speech input to type using the Keyboard.    
     </div>
   </div>
 </details>
@@ -133,9 +137,8 @@ This list outlines the essential features and functionalities expected in the de
   <div>
     <div>
     - Ability to add and remove new key-binds for MotionInput mode easily in the settings.
-    - Speech input support to control navigation of the app and to change settings.
-    - Bluetooth controlled speech input to write using the Keyboard.    
     - A setting to automatically reconnect to a bluetooth device after losing connection.
+    - Make the device discoverable so the controller can be connected to from another devices.
     </div>
   </div>
 </details>
