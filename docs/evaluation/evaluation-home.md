@@ -109,10 +109,10 @@ The project was effectively coordinated through weekly lab sessions where tasks 
 
 If we had more time we would extend the project in the following ways:
 
-1. Improve the apps performance even further. We would want the app to run even smoother on hardware with lower specs to make the application accessible for all ranges of devices. We would consider utilising threading further to optimise certain components and reduce complexity in other places.
+1. Enhance the application's performance to ensure better operation across a wider range of devices, particularly those with lower specifications. This would involve further optimization through threading and simplification of certain components to reduce complexity, ultimately aiming for smoother functionality across all device levels.
 
-2. Add user profiles so that multiple people can be use the same device. This would allow them to save their settings and presets to their profile and not the app itself. This would mean they can switch to their prefered configuration easily without having to modify all the settings individually meaning seamless integration between users.
+2. Implement user profiles to enable multiple individuals to utilize the same device with personalized settings and presets. By saving configurations to individual profiles rather than the app itself, users can effortlessly switch between preferences, ensuring a better experience for each user.
 
 3. Make the app discoverable to other devices to expand the supported set of ways users can pair with target devices. Since some devices can only pair via this method it will make the app accessible to larger amount of potential devices.
 
-4. Extend the layout configurations to work in landscape mode. We would create new layout pages for each screen with the corresponding landscape orientation. This might make the user experience better when using the app on Android tablets.
+4. Extend layout configurations to support landscape mode, thereby improving the user experience, especially on Android tablets. This would involve creating dedicated layout pages for landscape orientation, ensuring optimal usability across different device types.
