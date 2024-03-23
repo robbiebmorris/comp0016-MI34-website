@@ -1,5 +1,7 @@
 # Legal Statement
 
+---
+
 ## GDPR
 
 MotionInput Bluetooth Controller does not currently store and process any user information. Any video taken using the camera for use with MotionInput is not stored locally and is not transmitted to any device over Bluetooth. The app does not collect or store any data about the user. MotionInput Bluetooth Controller is therefore GDPR compliant.

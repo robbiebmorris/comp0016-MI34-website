@@ -1,5 +1,7 @@
 # Testing
 
+---
+
 ## Testing Stratergy
 
 MotionInput Bluetooth controller is a client-side application. This means we needed to formulate a comprehensive testing stratergy that would adequately cover all possible cases of user input through our UI. This meant we could ensure the apps usability meet our desired standards and that the app handles all cases of user input (good and bad) in a way that doesn't affect it's stability. Overall, this meant we could deliver an app that would be of a high standard.
@@ -40,7 +42,7 @@ AndroidX Fragment-Testing allowed us to launch and test fragments and activities
 
 An example test which verifies that users cannot enter invalid MAC addresses is shown below:
 
-```jsx title="/src/androidTest/java/com/example/comp0016_group23_app/fragments/bluetooth/AddManualFragmentTest.java"
+```java title="/src/androidTest/java/com/example/comp0016_group23_app/fragments/bluetooth/AddManualFragmentTest.java"
 public class AddManualFragmentTest {
     private FragmentScenario<AddManualFragment> scenario;
     @Mock
@@ -170,7 +172,6 @@ We devised a set of test cases to be performed, followed by requesting feedback 
 </div>
 
 ### Conclusion
-
 
 We were delighted by the feedback from users, indicating an overall positive experience. Their valuable input enabled us to pinpoint and rectify any sensitivity issues with mouse inputs effectively. Acting upon this feedback, we've implemented changes aimed at improving the user experience for all.
 

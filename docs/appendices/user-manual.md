@@ -8,6 +8,8 @@ import UserGuideSettingsHelp from '../../static/img/appendicies/user-manual-sett
 
 # User Manual
 
+---
+
 ## Using the Home Page
 
 When you open the app you will be greeted on the home page by default:
