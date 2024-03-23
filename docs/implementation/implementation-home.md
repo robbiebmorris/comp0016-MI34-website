@@ -533,6 +533,59 @@ The same method is used with the scroll bar, except, we only consider movement's
 
 ### Keyboard Fragment
 
+The keyboard fragments lanuches the devices soft-keyboard when the fragments view is created:
+
+```java
+...
+InputMethodManager imm = (InputMethodManager) getActivity().getSystemService(Context.INPUT_METHOD_SERVICE);
+imm.showSoftInput(inputField, InputMethodManager.SHOW_IMPLICIT);
+...
+```
+
+This is set to write to an empty text input field that has been removed from view. When the user presses keys on the keyboard they are added to this field which we can then send to the character code they entered to BluetoothInput to transmit over Bluetooth. This is done by adding it to the queue defined earlier in the BluetoothInput class.
+
+```java
+@Override
+public void onTextChanged(CharSequence s, int start, int before, int count) {
+    int currentLength = s.length();
+    if (currentLength > previousLength) { // Text was added
+        char key = s.charAt(s.length() - 1);
+        if ((key != nonVisibleChar) && ((currentLength - previousLength) == 1)) {
+            keyboardInput.queueCharacter(key);
+        } else if ((key != nonVisibleChar) && ((currentLength - previousLength) > 1)) {
+            String newText = s.toString();
+            String addedText = newText.substring(start, start + count - before);
+
+            keyboardInput.queueString(addedText);
+        }
+    } else if (currentLength < previousLength) { // Text was removed (backspace)
+        keyboardInput.queueCharacter('\b');
+    }
+}
+```
+
+We utilise toggle buttons to manage keyboard modifiers like Control and Command. Upon the user pressing these keys, we update the modifier key in bluetoothInput, which is transmitted as part of the report. Subsequently, when a user clicks a key, the toggle is automatically deactivated, releasing the modifier. It's crucial to ensure the release of all modifiers to prevent unexpected Bluetooth input in subsequent interactions. Therefore we release modifers after every key that is sent.
+
+```java
+if (isCtrlPressed) {
+    getActivity().runOnUiThread(() -> {
+        isCommandPressed = false;
+        isAltPressed = false;
+        MaterialButton commandCheckBox = getView().findViewById(R.id.commandButton);
+        MaterialButton altCheckBox = getView().findViewById(R.id.altButton);
+        commandCheckBox.setChecked(false);
+        altCheckBox.setChecked(false);
+        keyboardInput.setModifier((byte) 0);
+   });
+
+    keyboardInput.setModifier((byte) 1);
+} else {
+    keyboardInput.setModifier((byte) 0);
+}
+```
+
+The arrow keys and volume buttons are all modelled as simple buttons and are handled in the same way as buttons in the mouse fragment.
+
 ### Gamepad Fragment
 
 The gamepad fragment implemetes a games controller. It uses simple on-screen button components to deal with buttons, then when clicked their respective listener triggers a call to BluetoothInput where the button event state is updated. The joystick's of the gamepad are created by drawing two circles on screen, then when the user touches the inner circle a touch event is observed on screen. The difference between the location of the touch event and the origin of the joystick is calculated and used to move the location of the inner circle on the screen. This enables us to model the movment of a joystick.

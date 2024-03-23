@@ -8,7 +8,7 @@ MotionInput Bluetooth Controller does not currently store and process any user i
 
 ## Source Code License
 
-"Our software operates under a closed-source license model, which means that the source code is not made available to the public. This proprietary approach allows us to maintain control over the distribution and modification of the software, ensuring its integrity and security. Users are granted a license to use the software according to the terms outlined in the End-User License Agreement (EULA), but do not have access to the underlying source code. Access to the source code is restricted to authorized personnel within our development team and UCL examiners.
+Our software operates under a closed-source license model, which means that the source code is not made available to the public. Users are granted a license to use the software according to the terms outlined in the End-User License Agreement (EULA), but do not have access to the underlying source code. Access to the source code is restricted to authorized personnel within our development team and UCL examiners.
 
 ## Privacy of Data
 
