@@ -1,5 +1,7 @@
 # System Design
 
+---
+
 ## System Architecture
 
 The MotionInput Bluetooth controller comprises both front-end and back-end components. The front-end components handle user interface presentation and user interactions within the application. The application is structured around a single activity, utilizing fragments as defined UI components and a fragment manager to dynamically switch between various UI displays based on user selections. XML layouts are employed in constructing the front-end to specify the structure and appearance of UI elements.

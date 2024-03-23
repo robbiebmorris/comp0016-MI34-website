@@ -88,11 +88,13 @@ The Bluetooth connectivity setup is handled primarily by the BluetoothMain class
 
 BluetoothMain initializes the Bluetooth adapter and checks if the device supports the Bluetooth HID (Human Interface Device) profile using adapter.getProfileProxy(main, this, BluetoothProfile.HID_DEVICE). If supported, an instance of the HidDevice class is created when the Bluetooth HID service is connected (onServiceConnected()). The HidDevice manages the connection with the HID device and handles sending/receiving HID reports, which will be discussed in more detail in later sections.
 
+Throughout the codebase, BluetoothMain is accessed using the BluetoothManager class which uses the singleton design pattern. This ensures there is only a single instance of BluetoothMain created throughout the lifetime of the program, and it provides a global point of access to that instance using the *getInstance()* method.
+
 To connect to a Bluetooth device, the HidDevice instance obtained from BluetoothMain.getHost() is used. The HidDevice.connect(TargetDevice) method initiates the connection process with the specified TargetDevice instance.
 
 ```java title="Simple Example Connection Code"
-BluetoothMain bluetoothMain = ...;
 TargetDevice targetDevice = ...;
+BluetoothMain bluetoothMain = BluetoothManager.getInstance(context);
 HidDevice hidDevice = bluetoothMain.getHost().connect(targetDevice);
 ```
 
@@ -144,7 +146,7 @@ In summary, the code uses the Android Bluetooth API to start and stop the Blueto
 
 ### Bluetooth Direct Connect​
 
-The user is also able to directly connect to a bluetooth device if their device is not showing up in the bluetooth scan. The bluetooth fragment enables the user to manually input their MAC address and the BluetoothMain connectivity code will be run straight away.
+The user is also able to directly connect to a bluetooth device if their device is not showing up in the bluetooth scan. The bluetooth fragment enables the user to manually input their Bluetooth MAC address and the BluetoothMain connectivity code will be run straight away.
 
 After a user pairs their device using the direct or scan methods, then to connect they can simple press on their device that they have added on the homescreen. More devices can also be added and the user can easily switch between them without having to repeat the pairing process.
 

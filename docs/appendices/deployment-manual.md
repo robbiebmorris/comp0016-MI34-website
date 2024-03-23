@@ -1,5 +1,7 @@
 # Deployment Manual
 
+---
+
 MotionInput Bluetooth controller has been built in Android Studio and written in Java. You will need an android device running AndroidOS Minimim 11 to install the controller on your device or alternitively you can use the built in Android Studio emulator.
 
 **Note: The Andoid Studio emulator doesn't have any Bluetooth or Camera functionailty, therefore the main features of the app are limited to physical devices.**
