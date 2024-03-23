@@ -177,4 +177,4 @@ We were delighted by the feedback from users, indicating an overall positive exp
 
 ## References
 
-[1] Composables (2023, Oct. 1). *Android Distribution Chart* [Online]. Available: https://www.composables.com/tools/distribution-chart
+[1] Composables, "Android Distribution Chart" *composable.com*, Oct. 1, 2023. [Online]. Available: https://www.composables.com/tools/distribution-chart [Accessed 15 March 2024] <br></br>
