@@ -21,7 +21,7 @@ Within the java directory, packages are organized based on the application's pac
 ### Activities
 
 An activity represents a single screen with a user interface. It is a fundamental component of an Android app.
-Activities are typically defined by extending the Activity class (or in our case its subclasses like AppCompatActivity). Each activity has its lifecycle methods (onCreate(), onStart(), onResume(), onPause(), onStop(), onDestroy(), etc.), which are called at different stages of the activity's lifecycle.  
+Activities are typically defined by extending the Activity class (or in our case its subclasses like AppCompatActivity). All activities have their own lifecycle methods (onCreate(), onStart(), onResume(), onPause(), onStop(), onDestroy(), etc.), which are called at different stages of the activity's lifecycle. Our application is structured around one singular mainActivity, and uses fragments to switch between pages and modify the UI.
 
 ```java
 public class ExampleActivity extends AppCompatActivity {
@@ -44,9 +44,7 @@ public class ExampleActivity extends AppCompatActivity {
 
 ### Fragments
 
-Fragments represent a portion of the user interface or behavior in an activity.
-Fragments allow for a more modular and flexible UI design, enabling developers to create reusable components.
-Fragments have similar lifecycle methods (onCreateView(), onActivityCreated(), onStart(), onResume(), onPause(), onStop(), onDestroyView(), onDestroy(), etc.), which are synchronized with the hosting activity's lifecycle.
+Fragments represent a portion of the user interface or behavior in an activity. Fragments allow for a more modular and flexible UI design, enabling developers to create reusable components. Fragments have similar lifecycle methods (onCreateView(), onActivityCreated(), onStart(), onResume(), onPause(), onStop(), onDestroyView(), onDestroy(), etc.), which are synchronized with the hosting activity's lifecycle.
 
 ```java
 public class ExampleFragment extends Fragment {
