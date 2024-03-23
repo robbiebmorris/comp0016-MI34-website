@@ -203,7 +203,7 @@ These classes contin the logic needed for each layout fragment. This includes th
 
 ### Class Structure Overview
 
-A simplifed overview of the applications class structure is shown by this UML diagram:
+An overview of the applications class structure is shown by this UML diagram. Although some class methods, variables and fragment classes have been omitted for simplicity:
 
 <div class="img-center"> ![Class Structure UML](../../static/img/sys-design/uml-diagram.png) </div>
 
