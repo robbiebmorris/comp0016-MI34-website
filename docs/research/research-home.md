@@ -24,7 +24,7 @@ Since our Bluetooth contoller was not going to be built using physical hardware,
 There are many examples of Android Bluetooth Keybord and Mouse applications currently on the Google Play store. Bluetooth Keyboard & Mouse <sub>[2]</sub> is the most advanced contoller currently available and is widely supported on the newest versions of Andorid. This app offers a large range of supported devices: Smartphone, Tablet, Computer or Android TV <sub>[2]</sub> and lots of useful features:
 
 - Keyboard and Mouse will scrolling support.
-- 100+ Keyboard language layouts
+- 100+ Keyboard language layouts.
 - Multimedia mode to control playback, volume and navigation on media players.
 
 Bluetooth Keyboard & Mouse <sub>[2]</sub> uses the Bluetooth HID protocol to connect and comunicate with other devices. This means the serverless implementation can be achieved by using the HID class drivers that are already installed on the majority of systems. We can use this design choice in our project to achieve the intended serverless implementation. However, Bluetooth Keyboard & Mouse <sub>[2]</sub> only supports a manual trackpad and keyboard controller and its user interface can become convoluted and overly complex in some places. By implementing MotionInput as a new form of control and providing a more refinded UI, our project can surpass this product with in these areas.

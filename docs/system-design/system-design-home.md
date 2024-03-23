@@ -10,6 +10,10 @@ The back-end systems deal with the Bluetooth connection related logic and use An
 
 <div class="img-center"> ![High-level System Architecture](../../static/img/sys-design/system-architecture.png) </div>
 
+<div class="img-center"> ![High-level System Architecture](../../static/img/sys-design/system-architecture-complicated.png) </div>
+
+<div class="img-center"> ![High-level System Architecture](../../static/img/sys-design/permissions.png) </div>
+
 ## Backend Architecture
 
 ### High-Level Overview
