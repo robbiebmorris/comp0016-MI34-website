@@ -19,7 +19,7 @@ We a pleased that our product completes 100% of the MUST and SHOULD and some of 
 | 4 | Keyboard controller | Must | &#10003; | Ulk |
 | 5 | Gamepad controller | Must | &#10003; | Robbie |
 | 6 | MotionInput support and integration for Face, Hands and Eyegaze | Must | &#10003; | Hugh + Masters Team's |
-| 7 | Settings page | Must | &#10003; | Hugh |
+| 7 | Settings pages | Must | &#10003; | Hugh, Robbie |
 | 8 | Dark and light Mode | Should | &#10003; | Hugh |
 | 9 | Speech input to control app navigation | Should | &#10003; | Hugh + Masters Teams's |
 | 10 | Speech controlled keyboard over Bluetooth | Should | &#10003; | Ulk + Masters Team's |
