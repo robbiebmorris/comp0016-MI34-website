@@ -93,7 +93,7 @@ Integration tests were used to test how the bluetooth component and main activit
 
 <div class="img-center"> ![Testing Frameworks](../../static/img/testing/integration_test.png) </div>
 
-We tested the MainAactivity to verify that the flow between different screens was handled correctly:
+We tested the MainAactivity to verify that the flow between different screens was handled correctly. This includes simulting user clicks on the navigation bar, settings and help buttons and the MotionInput toggle. These tests then verifiy the correct state change has occured and the correct fragment was launched.
 
 <div class="img-center"> ![Testing Frameworks](../../static/img/testing/main-act-test.png) </div>
 
