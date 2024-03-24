@@ -1,10 +1,12 @@
+import AndroidFragment from '../../static/img/implementation/activity-fragment.png';
+
 # Implementation
 
 ---
 
 ## Android Development Introduction
 
-# add a nice intro here.
+This section gives a brief overview of the tools and components using within Android development and the Android application lifecycle. Then we give a detailed account of the backend architecture, UI and Bluetooth implementation.
 
 ### Project Structure
 
@@ -90,6 +92,14 @@ private void loadFragment(Fragment fragment) {
         transaction.commit();
     }
 ```
+
+The diagram below shows an overview of the fragment lifecycle within an activity. <sub>[1]</sub>
+
+<div class="img-center">
+    <img src={AndroidFragment} alt="AndroidFragment" style={{height: 400}} />
+</div>
+
+<br></br>
 
 ### User Interface (UI) Design
 
@@ -717,3 +727,7 @@ if (isChecked) {
 ```
 
 In the application, the color palette for both dark and light mode themes is predefined in the layout file rather than being set programmatically in the code. This approach allows for easier management of theme changes, as adjustments can be made in a single file, which is then applied globally throughout the app. By separating theme-related styling from the code logic, we can streamline the process of customizing and maintaining the app's visual appearance.
+
+## References
+
+[1] R, Mishr, "Fragment Lifecycle in Android" *geeksforgeeks.com*, Oct. 11, 2023. [Online]. Available: https://www.geeksforgeeks.org/fragment-lifecycle-in-android/ [Accessed on 23 March 2024]

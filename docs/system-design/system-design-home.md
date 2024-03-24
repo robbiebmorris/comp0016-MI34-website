@@ -44,6 +44,22 @@ The general types are then comprised of specific classes which define a specific
   </div>
 </details>
 <details>
+  <summary>BluetoothManager</summary>
+  <div>
+    <div>
+         This class follows the singleton design pattern ensuring only a single instance of BluetoothMain is only every created. It defines a *getInstance* method that is used throughout the codebase to access BluetoothMain
+    </div>
+  </div>
+</details>
+<details>
+  <summary>BluetoothInput</summary>
+  <div>
+    <div>
+         This class operates a continuous function on a separate thread, consistently sending transmission updates at a specified framerate. It maintains variables to store the state of all the application's inputs, which can be modified by fragment classes through setter methods. The class encapsulates the functionality of starting and stopping the transmission updater, ensuring proper thread handling.
+    </div>
+  </div>
+</details>
+<details>
   <summary>Descriptor</summary>
   <div>
     <div>
@@ -157,7 +173,11 @@ These classes contin the logic needed for each layout fragment. This includes th
   <summary>MotionInput Fragments</summary>
   <div>
     <div>
-    These contain the logic needed to display and interact with necessary UI components needed by the MotionInput for Android implementation. They then interact with the necessary MotionInput code ported from other students projects.
+    These contain the logic needed to display and interact with necessary UI components needed by the MotionInput for Android implementation. They then interact with the necessary MotionInput code integrated from the other teams projects. These fragments include:
+
+    - Face
+    - Hands
+    - Eyes
     </div>
   </div>
 </details>
@@ -166,14 +186,6 @@ These classes contin the logic needed for each layout fragment. This includes th
   <div>
     <div>
     This class contains the logic needed to display the trackpad used for the mouse on the screen and then deal with user interactions. It measures where the user swipes to caluclaute an absolute (X,Y) value for a given movement which can then be translated into a relative mouse movement and sent via the Bluetooth component.
-    </div>
-  </div>
-</details>
-<details>
-  <summary>Joystick Fragment</summary>
-  <div>
-    <div>
-    This class contains the logic needed to diaplay the joystick used in the GamePad on the screen and deal with user interactions. It deals with updating the UI to animate JoyStick movements on the screen and also calculate relative (X,Y) values depending on the interaction with the user.
     </div>
   </div>
 </details>
