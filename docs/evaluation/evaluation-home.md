@@ -7,6 +7,8 @@ import TabItem from '@theme/TabItem';
 
 ## MoSCoW List Evaluation
 
+### Functional Requirements
+
 We a pleased that our product completes 100% of the MUST and SHOULD and some of the COULD MoSCoW requirements. The full achievement table is shown below:
 
 <div class="img-center">
@@ -27,8 +29,6 @@ We a pleased that our product completes 100% of the MUST and SHOULD and some of 
 | 12 | Make the device discoverable to connect from other devices | Could | &#10007; | N/A |
 | 13 | Ability to add and remove key-binds for MotionInput mode in settings | Could | &#10007; | N/A |
 | 14 | Profiles to retain settings and presets for each user | Wont | &#10007; | N/A |
-
-<!-- Do we also need to do this for non-functional? -->
 
 </div>
 

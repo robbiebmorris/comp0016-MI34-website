@@ -228,9 +228,7 @@ Our project has a strong accessibility oriented focus, as an app targeted toward
   <div>
     <div>
         - Usability - Prioritize user-friendly interfaces and intuitive controls to enhance the overall user experience, catering to users of all abilities and preferences.
-        - Localization - Support multiple languages in order to enable broader accessibility across different regions and communities.
         - Documentation - Provide comprehensive documentation and user guides to assist users in setting up and using the app effectively.
-        - Security - Protect user data and ensure the privacy of interactions between the controller and connected devices.
     </div>
   </div>
 </details>
@@ -242,6 +240,7 @@ Our project has a strong accessibility oriented focus, as an app targeted toward
         - Internal Functionality - Implement functionality to enable users to interact with the android phone itself through MotionInput, rather than a connected bluetooth device.
         - Battery Efficiency - Optimize the app such that the power consumption is not excessively high, allowing for longer use of the application.
         - Feedback Mechanisms - Incorporate user surveys or in-app feedback forms to gather user input and improve the application based on user suggestions.
+        - Localization - Support multiple languages in order to enable broader accessibility across different regions and communities.
     </div>
   </div>
 </details>

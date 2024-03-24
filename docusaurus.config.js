@@ -188,12 +188,8 @@ const config = {
                 to: 'docs/appendices/deployment-manual'
               },
               {
-                label: 'GDPR',
-                to: 'docs/appendices/GDPR'
-              },
-              {
-                label: 'Data Privacy',
-                to: 'docs/appendices/privacy-of-data'
+                label: 'Legal Statement',
+                to: 'docs/appendices/legal-statement'
               },
               {
                 label: 'Monthly Videos',
