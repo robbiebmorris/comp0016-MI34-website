@@ -95,9 +95,9 @@ Integration tests were used to test how the bluetooth component interacted as a 
 
 ## Testing Coverage
 
-Using the Jacoco code coverage library we measured that xx% of our code was coverged by our automated testing:
+Our team utilised the Jacoco code coverage library to assess that 93% of our codebase is covered by our automated tests. Although, we had to exclude the MainActivity integration test class from our coverage report due to challenges with system-level permissions that cannot be modified during testing runtime. Despite this limitation, we're happy to achieve a high testing coverage, particularly considering the constraints imposed by the inability to test certain Android dependencies in our test suite.
 
-<!--  Insert code coverage picture here -->
+<div class="img-center"> ![Unit Tests](../../static/img/testing/coverage.png) </div>
 
 ## Performace Testing
 
