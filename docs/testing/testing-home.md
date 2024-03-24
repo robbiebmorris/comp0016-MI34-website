@@ -89,9 +89,13 @@ The results of these tests are as follows (*Note: The skipped tests are internal
 
 ## Integration Testing
 
-Integration tests were used to test how the bluetooth component interacted as a whole and with the Android framework. Alot of the same testing frameworks were used for this and we tried to simulate as much of the bluetooth functionality as possible to ensure eveything worked as intended. AndroidX allows us to launch an activity within our test class, we then created a blank TestActivity as to isolate the bluetooth component as much as possible so we could perform tests on it's functionality.
+Integration tests were used to test how the bluetooth component and main activity interacted as a whole and with the Android framework. Alot of the same testing frameworks were used for this and we tried to simulate as much of the bluetooth functionality as possible to ensure eveything worked as intended. AndroidX allows us to launch an activity within our test class, we then created a blank TestActivity as to isolate the bluetooth component as much as possible so we could perform tests on it's functionality.
 
 <div class="img-center"> ![Testing Frameworks](../../static/img/testing/integration_test.png) </div>
+
+We tested the MainAactivity to verify that the flow between different screens was handled correctly:
+
+<div class="img-center"> ![Testing Frameworks](../../static/img/testing/main-act-test.png) </div>
 
 ## Testing Coverage
 
