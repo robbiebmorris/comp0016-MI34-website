@@ -5,9 +5,9 @@ import styles from './styles.module.css';
 
 function TeamMemberCard({ member }) {
   const member_image = {
-    hugh: "https://www.linkedin.com/in/hugh-stanway-764391252.png",
+    hugh: "img/hugh.png",
     robbie: "https://github.com/robbiebmorris.png",
-    ulk: "https://github.com/Ulk-G.png"
+    ulk: "img/ulk.png"
   };
   
   const team_members = {
