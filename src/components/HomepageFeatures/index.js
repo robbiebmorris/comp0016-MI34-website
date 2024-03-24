@@ -195,7 +195,7 @@ export default function HomepageFeatures() {
         <div>
           <ProjectVideo
             title="Project Video"
-            videoId="jtKWr7FQ-bo"
+            videoId="OGUIGSf4Wuc"
           />
         </div>
         </ShrinkOnScroll></FadeInOnScroll>
