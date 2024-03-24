@@ -52,21 +52,20 @@ Our team used the GitHub issues page as the main way of tracking and fixing know
 
 <div class="img-center">
 
-| Work Packages | Hugh | Robbie | Ulk |
+| Work Packages        | Hugh | Robbie | Ulk |
 |-------------------------|--|--|--|
-| Project Partner Liaison | | | |
-| Other Teams Liaison     | | | |
-| Requirement Analysis    | | | |
-| HCI                     | | | |
-| Research                | | | |
-| Experiments             | | | |
-| UI Design               | | | |
-| Coding                  | | | |
-| Testing                 | | | |
-| Project Website         | | | |
-| Presentation Planning   | | | |
-| Video Editing           | | | |
-| **Main Roles**          | | | |
+| Project Partner Liaison |     |    |    |
+| Other Teams Liaison     |     |    |    |
+| Requirement Analysis    |     |    |    |
+| HCI                     |     |    |    |
+| Research & Experiments  |     |    |    |
+| UI Design               |     |    |    |
+| Coding                  |     |    |    |
+| Testing                 |     |    |    |
+| Project Website         |     |    |    |
+| Presentation Planning   |     |    |    |
+| Video Editing           |     |    |    |
+| **Main Roles**          |Client Liaison, Programmer, Tester |Report Editor, UI Designer, Researcher |Programmer, UI Designer, Tester|
 
 </div>
 
