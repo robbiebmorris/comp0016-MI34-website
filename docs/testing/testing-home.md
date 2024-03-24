@@ -83,7 +83,9 @@ public class AddManualFragmentTest {
 }
 ```
 
-Insert test cases picture here**
+The results of these tests are as follows (*Note: The skipped tests are internal JUnit tests we do not need*):
+
+<div class="img-center"> ![Unit Tests](../../static/img/testing/unit_test.png) </div>
 
 ## Integration Testing
 
