@@ -200,10 +200,10 @@ HID reports define the specific information that is sent with each packet in an 
 Report structure: 
    7 6 5 4 3 2 1 0 |
    ----------------|--- 
-   0 0 0 0 0 a b c | 1st byte
-   <    x pos    > | 2nd byte
-   <    y pos    > | 3rd byte
-   <    scroll   > | 4th byte
+   0 0 0 0 0 a b c | 1st byte (3 1-bit buttons, for left-click, right-click, & middle-click)
+   <    x pos    > | 2nd byte (8 bit integer for x coordinate of cursor)
+   <    y pos    > | 3rd byte (8 bit integer for y coordinate of cursor)
+   <    scroll   > | 4th byte (8 bit integer for scroll)
 ```
 
 As you can see, reports are formatted in little endian, meaning the bits go from largest to smallest. Using descriptors, we can write code in the HidDevice class to construct bluetooth reports based on inputs from the user on the android app. Inputs from the user are streamlined through the BluetoothInput class to HidDevice to be used in creating reports. We will break down what descriptors actually looks like in more depth in each devices section. 
