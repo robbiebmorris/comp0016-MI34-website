@@ -90,7 +90,7 @@ private void loadFragment(Fragment fragment) {
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
         transaction.replace(R.id.container, fragment);
         transaction.commit();
-    }
+}
 ```
 
 The diagram below shows an overview of the fragment lifecycle within an activity. <sub>[1]</sub>
