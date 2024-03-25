@@ -156,7 +156,7 @@ const config = {
               },
               {
                 label: 'System Design',
-                to: 'docs/system-design/system-architecture'
+                to: 'docs/system-design/system-design-home'
               },
               {
                 label: 'Implementation',
