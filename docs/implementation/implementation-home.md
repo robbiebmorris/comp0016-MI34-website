@@ -18,7 +18,7 @@ The key directories include:
 - manifests: Contains the AndroidManifest.xml file, which describes essential information about the app.
 - java: Contains the Java/Kotlin source code for the app.
 
-Within the java directory, packages are organized based on the application's package name, and classes are structured accordingly.
+Within the Java directory, packages are organised based on the application's package name, and classes are structured accordingly.
 
 ### Activities
 
@@ -30,7 +30,7 @@ public class ExampleActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        // Initialization tasks here
+        // Initialisation tasks here
     }
 
     @Override
@@ -46,7 +46,7 @@ public class ExampleActivity extends AppCompatActivity {
 
 ### Fragments
 
-Fragments represent a portion of the user interface or behavior in an activity. Fragments allow for a more modular and flexible UI design, enabling developers to create reusable components. Fragments have similar lifecycle methods (onCreateView(), onActivityCreated(), onStart(), onResume(), onPause(), onStop(), onDestroyView(), onDestroy(), etc.), which are synchronized with the hosting activity's lifecycle.
+Fragments represent a portion of the user interface or behavior in an activity. Fragments allow for a more modular and flexible UI design, enabling developers to create reusable components. Fragments have similar lifecycle methods (onCreateView(), onActivityCreated(), onStart(), onResume(), onPause(), onStop(), onDestroyView(), onDestroy(), etc.), which are synchronised with the hosting activity's lifecycle.
 
 ```java
 public class ExampleFragment extends Fragment {
@@ -60,7 +60,7 @@ public class ExampleFragment extends Fragment {
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        // View setup and initialization tasks here
+        // View setup and initialisation tasks here
     }
 
     @Override
@@ -78,9 +78,9 @@ public class ExampleFragment extends Fragment {
 
 Activities go through various lifecycle states as they are created, started, resumed, paused, stopped, and destroyed.
 Understanding and managing the activity lifecycle is crucial for proper resource management, UI updates, and handling user interactions. For example, when an activity is first created, the onCreate() method is called. As it becomes visible to the user, onStart() and onResume() are called. When it loses focus, onPause() is called, and so on.
-You can override these lifecycle methods to perform specific tasks, such as initializing UI components, saving/restoring instance state, releasing resources, etc.
+You can override these lifecycle methods to perform specific tasks, such as initialising UI components, saving/restoring instance state, releasing resources, etc.
 
-The MainActivities layout defines various UI components such as the MotionInput switch, settings and help buttons, and the navigation bar. The layout also contains a container responsible for displaying fragments. Each screen within the app is encapsulated within fragments. For instance, all components related to the trackpad functionality are contained within the TrackPadFragment.
+The MainActivity's layout defines various UI components such as the MotionInput switch, settings and help buttons, and the navigation bar. The layout also contains a container responsible for displaying fragments. Each screen within the app is encapsulated within fragments. For instance, all components related to the Trackpad functionality are contained within the TrackPadFragment.
 
 Whenever the user navigates to a different screen, the loadFragment method is invoked to update the fragment displayed in the container. This approach ensures modularity and flexibility within the app's UI structure, making it easier to manage and maintain.
 
@@ -109,7 +109,7 @@ Android provides various UI components and layouts (e.g., TextView, Button, Edit
 
 The Bluetooth connectivity setup is handled primarily by the BluetoothMain class. This class implements the BluetoothProfile.ServiceListener interface, which is a part of the Bluetooth API and is used to monitor the state of a specific Bluetooth profile. It provides a way to receive callbacks when the state of a Bluetooth profile changes, such as when it becomes connected or disconnected.
 
-BluetoothMain initializes the Bluetooth adapter and checks if the device supports the Bluetooth HID (Human Interface Device) profile using adapter.getProfileProxy(main, this, BluetoothProfile.HID_DEVICE). If supported, an instance of the HidDevice class is created when the Bluetooth HID service is connected (onServiceConnected()). The HidDevice manages the connection with the HID device and handles sending/receiving HID reports, which will be discussed in more detail in later sections.
+BluetoothMain initialises the Bluetooth adapter and checks if the device supports the Bluetooth HID (Human Interface Device) profile using adapter.getProfileProxy(main, this, BluetoothProfile.HID_DEVICE). If supported, an instance of the HidDevice class is created when the Bluetooth HID service is connected (onServiceConnected()). The HidDevice manages the connection with the HID device and handles sending/receiving HID reports, which will be discussed in more detail in later sections.
 
 Throughout the codebase, BluetoothMain is accessed using the BluetoothManager class which uses the singleton design pattern. This ensures there is only a single instance of BluetoothMain created throughout the lifetime of the program, and it provides a global point of access to that instance using the *getInstance()* method.
 
@@ -175,7 +175,7 @@ After a user pairs their device directly or using the Bluetooth scan, they can t
 
 ### Bluetooth Autoreconnect​
 
-The BluetoothMain.AttemptAutoReconnect() method attempts to reconnect to a previously saved Bluetooth device address. It retrieves the saved address from the Settings class and attempts to connect to the corresponding TargetDevice after a 1.5-second delay, allowing for Bluetooth setup to complete.
+The BluetoothMain.AttemptAutoReconnect() method attempts to reconnect to a previously saved Bluetooth device address. It retrieves the saved address from the Settings class and attempts to connect to the corresponding TargetDevice after a 1.5 second delay, allowing for Bluetooth setup to complete.
 
 ```java
 BluetoothMain bluetoothMain = ...;
@@ -216,7 +216,7 @@ Report structure:
    <    scroll   > | 4th byte (8 bit integer for scroll)
 ```
 
-As you can see, reports are formatted in little endian, meaning the bits go from largest to smallest. Using descriptors, we can write code in the HidDevice class to construct bluetooth reports based on inputs from the user on the android app. Inputs from the user are streamlined through the BluetoothInput class to HidDevice to be used in creating reports. We will break down what descriptors actually looks like in more depth in each devices section. 
+As you can see, reports are formatted in little endian, meaning the bits go from largest to smallest. Using descriptors, we can write code in the HidDevice class to construct bluetooth reports based on inputs from the user on the android app. Inputs from the user are streamlined through the BluetoothInput class to HidDevice to be used in creating reports. We will break down what descriptors actually look like in more depth in each devices section. 
 
 ### Mouse Input
 
@@ -280,7 +280,7 @@ This section defines the mouse movement data, including the X and Y coordinates,
 
 ```java
 (byte) 0xc0,       //   END_COLLECTION
-(byte) 0xc0        // END_COLLECTION
+(byte) 0xc0        //   END_COLLECTION
 ```
 
 This section simply ends the two collections that were started earlier (Physical and Application).
@@ -316,7 +316,7 @@ public void sendMouseInput(boolean leftClick, boolean rightClick, int x, int y, 
 ```
 ### Keyboard Input
 
-The keyboard HID descriptor also consists of 5 sections.
+The Keyboard HID descriptor also consists of 5 sections.
 
 #### Section 1: Identifying the Device Type
 
@@ -442,7 +442,7 @@ public void sendGamePadInput(int right_joystick_x, int right_joystick_y, int lef
 }
 ```
 
-The gamepad input method demonstrates the flexibility of the HidDevice class in handling various types of input and mapping them to appropriate HID reports for the connected device.
+The Gamepad input method demonstrates the flexibility of the HidDevice class in handling various types of input and mapping them to appropriate HID reports for the connected device.
 
 The HidDevice class provides a convenient interface for managing the connection and communication with a Bluetooth HID device. It offers methods for sending mouse, keyboard, and gamepad input, as well as helper methods for converting characters to HID usage codes and handling modifier keys. This class plays a crucial role in enabling the application to interact with HID devices and provide a seamless user experience.
 
@@ -460,7 +460,7 @@ if (id == R.id.left_click_button){
 
 The sendMouseInput, sendKeyboardInput, and sendGamepadInput methods are called at each iteration of the loop with the current state of each variable. This method allows for the implementation of features such as click and hold by manually updating the click states to true or false, and also ensures smooth mouse movement.
 
-To maximize efficiency, this loop runs only once a device is connected and is then stopped once a connection is lost. The loop rate is calculated to send inputs at 150Hz. This ensures smooth mouse movement on all device screens, minimizing laggy movements.
+To maximise efficiency, this loop runs only once a device is connected and is then stopped once a connection is lost. The loop rate is calculated to send inputs at 150Hz. This ensures smooth mouse movement on all device screens, minimising laggy movements.
 
 ```java
 public void start() {
@@ -495,7 +495,7 @@ private void run() {
 }
 ```
 
-To facilitate sending long strings, a queue is utilised. When a string needs to be sent as keyboard input, its characters are added to the queue. During each iteration, the keyboard report is filled with any characters remaining in the queue until it's emptied. This approach allows for sending strings longer than the number of characters that fit into the keyboard HID report. However, given our use of threading, we took extra care to prevent race conditions. Synchronization blocks are applied to all methods accessing the queue, coupled with the utilization of a thread-safe queue implementation. This ensures smooth operation without the risk of data corruption or inconsistency due to concurrent access.
+To facilitate sending long strings, a queue is utilised. When a string needs to be sent as keyboard input, its characters are added to the queue. During each iteration, the keyboard report is filled with any characters remaining in the queue until it's emptied. This approach allows for sending strings longer than the number of characters that fit into the keyboard HID report. However, given our use of threading, we took extra care to prevent race conditions. Synchronisation blocks are applied to all methods accessing the queue, coupled with the utilisation of a thread-safe queue implementation. This ensures smooth operation without the risk of data corruption or inconsistency due to concurrent access.
 
 ```java
 public synchronized void queueString(String input) {
@@ -543,7 +543,7 @@ The same method is used with the scroll bar, except, we only consider movement's
 
 ### Keyboard Fragment
 
-The keyboard fragments lanuches the devices soft-keyboard when the fragments view is created:
+The keyboard fragment lanuches the devices soft-keyboard when the fragments view is created:
 
 ```java
 ...
@@ -574,7 +574,7 @@ public void onTextChanged(CharSequence s, int start, int before, int count) {
 }
 ```
 
-We utilise toggle buttons to manage keyboard modifiers like Control and Command. Upon the user pressing these keys, we update the modifier key in bluetoothInput, which is transmitted as part of the report. Subsequently, when a user clicks a key, the toggle is automatically deactivated, releasing the modifier. It's crucial to ensure the release of all modifiers to prevent unexpected Bluetooth input in subsequent interactions. Therefore we release modifers after every key that is sent.
+We utilise toggle buttons to manage keyboard modifiers like Control and Command. Upon the user pressing these keys, we update the modifier key in BluetoothInput, which is transmitted as part of the report. Subsequently, when a user clicks a key, the toggle is automatically deactivated, releasing the modifier. It's crucial to ensure the release of all modifiers to prevent unexpected Bluetooth input in subsequent interactions. Therefore we release modifers after every key that is sent.
 
 ```java
 if (isCtrlPressed) {
@@ -634,7 +634,7 @@ Upon navigating to mouse, keyboard, or gamepad functionalities, the correspondin
 
 ## Speech Mode
 
-One of the master teams implemented the speech mode component, which was then integrated into the app. With this integration, our team established a set of speech commands enabling users to navigate the app using their voice. When the speech component detects the user's voice, it converts it into a string. This string is then parsed to identify the command given by the user. Once the command is recognized, we manually trigger the corresponding event. For instance, if the user says "open settings," we call the method responsible for opening the settings page, simulating the action typically triggered by a button event.
+One of the master teams implemented the speech mode component, which was then integrated into the app. With this integration, our team established a set of speech commands enabling users to navigate the app using their voice. When the speech component detects the user's voice, it converts it into a string. This string is then parsed to identify the command given by the user. Once the command is recognised, we manually trigger the corresponding event. For instance, if the user says "open settings," we call the method responsible for opening the settings page, simulating the action typically triggered by a button event.
 
 ```java
 @SuppressLint("SetTextI18n")
@@ -726,7 +726,7 @@ if (isChecked) {
 ...
 ```
 
-In the application, the color palette for both dark and light mode themes is predefined in the layout file rather than being set programmatically in the code. This approach allows for easier management of theme changes, as adjustments can be made in a single file, which is then applied globally throughout the app. By separating theme-related styling from the code logic, we can streamline the process of customizing and maintaining the app's visual appearance.
+In the application, the color palette for both dark and light mode themes is predefined in the layout file rather than being set programmatically in the code. This approach allows for easier management of theme changes, as adjustments can be made in a single file, which is then applied globally throughout the app. By separating theme-related styling from the code logic, we can streamline the process of customising and maintaining the app's visual appearance.
 
 ## References
 
