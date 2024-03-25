@@ -8,7 +8,7 @@ MotionInput Bluetooth Controller does not currently store and process any user i
 
 ## Source Code License
 
-Our software operates under a closed-source license model, which means that the source code is not made available to the public. Users are granted a license to use the software according to the terms outlined in the End-User License Agreement (EULA), but do not have access to the underlying source code. Access to the source code is restricted to authorized personnel within our development team and UCL examiners.
+Our software operates under a closed-source license model, which means that the source code is not made available to the public. Users are granted a license to use the software according to the terms outlined in the End-User License Agreement (EULA), but do not have access to the underlying source code. Access to the source code is restricted to authorised personnel within our development team and UCL examiners.
 
 ## Privacy of Data
 
@@ -23,7 +23,7 @@ We do not collect any personal data from users of MotionInput Bluetooth Controll
 MotionInput Bluetooth Controller may require certain permissions to access device features necessary for its core functionality, such as accessing the camera or microphone. However, we do not collect or transmit any data from these features.
 
 3. DATA SECURITY:
-While we do not collect personal data, we still take data security seriously. We implement reasonable security measures to protect any non-personal data collected by our mobile application from unauthorized access, disclosure, alteration, or destruction.
+While we do not collect personal data, we still take data security seriously. We implement reasonable security measures to protect any non-personal data collected by our mobile application from unauthorised access, disclosure, alteration, or destruction.
 
 4. THIRD-PARTY SERVICES:
 Our mobile application does not integrate with any third-party services that may collect personal data. We do not share any information with third parties.
