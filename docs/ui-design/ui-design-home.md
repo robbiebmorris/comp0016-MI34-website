@@ -58,8 +58,6 @@ The final design uses an initial home-page which the app will load into on launc
 
 The mouse component uses a trackpad along with buttons, while the keyboard component repurposes the devices native keyboard for input. The Game Pad is a combination of mouse and keyboard inputs, using a joy-stick and buttons displayed on the screen. 
 
-# add previous hci design asw
-
 The final design can be seen in the interactive wire-frame below:
 
 <div class="iframe-container">
