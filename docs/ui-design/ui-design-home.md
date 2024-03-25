@@ -28,7 +28,7 @@ Maintaining consistency in design elements, terminology, layout, and interaction
 
 ### Constraints
 
- Implementing appropriate constraints in the design helps guide users towards desired actions and prevents them from making errors or encountering unintended outcomes. For example, removing irrelevant options or grayed-out buttons communicates to users that certain actions are not available in the current context. Providing clear error messages or confirmation prompts can also help users understand the limitations and requirements of specific actions, reducing frustration and imporving the overall usability of your app.
+ Implementing appropriate constraints in the design helps guide users towards desired actions and prevents them from making errors or encountering unintended outcomes. For example, removing irrelevant options or grayed-out buttons communicates to users that certain actions are not available in the current context. Providing clear error messages or confirmation prompts can also help users understand the limitations and requirements of specific actions, reducing frustration and improving the overall usability of your app.
 
 ## Sketching Designs
 
