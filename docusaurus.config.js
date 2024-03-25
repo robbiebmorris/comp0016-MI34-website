@@ -13,7 +13,7 @@ const config = {
   favicon: 'img/motioninputlogo.png',
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://students.cs.ucl.ac.uk',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/2023/group23/',
