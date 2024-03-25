@@ -6,7 +6,7 @@ import styles from './styles.module.css';
 function TeamMemberCard({ member }) {
   const member_image = {
     hugh: "img/hugh.png",
-    robbie: "https://github.com/robbiebmorris.png",
+    robbie: "img/robbie.png",
     ulk: "img/ulk.png"
   };
   
