@@ -62,10 +62,10 @@ Our team used the GitHub issues page as the main way of tracking and fixing know
 | UI Design               |25%  |50% |25% |
 | Coding                  |50%  |15% |35% |
 | Testing                 |75%  |0%  |25% |
-| Project Website         |49%  |48% |3%  |
+| Project Website         |43%  |42% |15% |
 | Presentation Planning   |0%   |100%|0%  |
-| Video Editing           |0%   |100%|0%  |
-| Overall                 |36%  |31% |33% |
+| Video Editing           |5%   |90% |5%  |
+| **Overall**                 |36%  |31% |33% |
 | **Main Roles**          |Client Liaison, Programmer, Tester |Report Editor, UI Designer, Researcher |Programmer, UI Designer, Tester|
 
 </div>
