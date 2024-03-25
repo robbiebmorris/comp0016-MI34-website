@@ -9,7 +9,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'MotionInput Bluetooth Controller',
-  tagline: 'Revolutionize the way you interact with your devices through MotionInput.',
+  tagline: 'Revolutionise the way you interact with your devices through MotionInput.',
   favicon: 'img/motioninputlogo.png',
 
   // Set the production url of your site here

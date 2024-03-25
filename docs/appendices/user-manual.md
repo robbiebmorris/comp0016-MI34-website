@@ -42,7 +42,7 @@ You can either add new devices manually or by scanning for nearby devices:
 
 1. Found devices will display here, using the same list as on the homepage. Click on the device you want to create a pairing.
 2. Cancel search and go back to the homepage.
-3. Enter the new device name - This can be anything you want.
+3. Enter the new device name - this can be anything you want.
 4. Bluetooth MAC address of the device you want to pair with. This MUST be in the format XX:XX:XX:XX:XX:XX
 5. Cancel search and go back to the homepage.
 6. Once you have entered a name and the MAC address, click 'Add' to create the pairing.
@@ -59,8 +59,8 @@ You can use the mouse in manual mode using a trackpad on the app to controll the
 
 1. Drag your finger along the trackpad in the same way you would on a laptop trackpad to move the mouse.
 2. Use the side bar to controll the ```up``` and ```down``` scroll of the page.
-3. Left Click
-4. Right Click
+3. Left Click.
+4. Right Click.
 5. Switch into MotionInput mode.
 
 ## Using the keyboard Manually
@@ -73,18 +73,18 @@ You can use the keyboard in manual mode using a keyboard on the app to controll 
 
 <br></br>
 
-1. Press keys to contoll the conncted devices keyboard.
+1. Press keys to control the conncted devices keyboard.
 2. Backspace can be used to remove characters.
 3. Return can be used in the same way as a normal keyboard.
 4. Press here to see special characters. The app supports all ASCII characters.
 5. Press here to hide the keyboard when finished.
-6. Press here to use keyboard arrow keys
-7. Press here for volume control
-8. Control, Alt/ Option and Command for keyboard shortcuts
+6. Press here to use keyboard arrow keys.
+7. Press here for volume control.
+8. Control, Alt/Option and Command for keyboard shortcuts.
 
 ## Using the Game Pad Manually
 
-You can use the Game Pad as a controller to controll devices that would usually need a controller to use, for example a video game:
+You can use the Game Pad as a controller to control devices that would usually need a controller to use, for example a video game:
 
 <div class="img-center">
     <img src={UserGuideGamepad} alt="UserGuideGamepad" style={{height: 600}} />
@@ -99,7 +99,7 @@ You can use the Game Pad as a controller to controll devices that would usually 
 
 ## Using MotionInput Mode.
 
-Mouse, Keyboard and Game Pad can all be used using MotionInput mode to controll them using Hand, Face or Eye gestures instead of manual input:
+Mouse, Keyboard and Gamepad can all be used using MotionInput mode to control them using Hand, Face or Eye gestures instead of manual input:
 
 <div class="img-center">
     <img src={UserGuideMotionInput} alt="UserGuideMotionInput" style={{height: 600}} />

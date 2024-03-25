@@ -10,14 +10,14 @@ import TabItem from '@theme/TabItem';
 
 Accessibility to digital tools and devices is becoming increasingly crucial, and yet many individuals, particularly those with disabilities or confined to hospital settings, face significant challenges in harnessing the benefits of modern technology due to limitations in motor control. Simple activities like operating a TV can become arduous tasks for them, highlighting the pressing need for innovative solutions. MotionInput is a project lead by UCL that has spanned over multiple years of development with the goal of addressing this issue. It aims to transform everyday computer web-cams into virtual a controller for your computer using a range of inputs, such as: Face tracking, Eye tracking, Hotspot tracking and Movement tracking. 
 
-Recognizing this, our team alongside our client MotionInput Games has been working to develop a solution that would empower users to get the full benefit of MotionInput through their phones rather than laptops. The MotionInput Bluetooth Controller for Android aims to offer an application that enables users to control a TV or any Bluetooth-enabled device hands-free from their mobile phone. It should support a variety of MotionInput input methods such as to allow users to navigate through interfaces, access entertainment, and engage with digital content with ease and comfort. The controller should be accessible to users with a wide range of ability and also work with a range of devices, such as: Mac computers, iPad's, Windows computers, Smart TV's and other Android devices.
+Recognising this, our team alongside our client MotionInput Games has been working to develop a solution that would empower users to get the full benefit of MotionInput through their phones rather than laptops. The MotionInput Bluetooth Controller for Android aims to offer an application that enables users to control a TV or any Bluetooth enabled device hands-free from their mobile phone. It should support a variety of MotionInput input methods such as to allow users to navigate through interfaces, access entertainment, and engage with digital content with ease and comfort. The controller should be accessible to users with a wide range of ability and also work with a range of devices, such as: Mac computers, iPad's, Windows computers, Smart TV's and other Android devices.
 
 ## Project Goals
 
 Our aim is to develop an app that can be downloaded directly from the Android app store and run on a wide range of Android devices. The app should have a full feature set displaying the vision of the Mobile Bluetooth Controller, and be easily extensible to support new MotionInput modes. That means we should support:
 
 - Bluetooth Scan and Connection via the HID protocol.
-- Manual Controllers, including a Mouse controller, Keyboard controller, and Gamepad controller
+- Manual Controllers, including a Mouse controller, Keyboard controller, and Gamepad controller.
 - MotionInput Integration with the Bluetooth Controller.
 
 We hope that the development of this app will enable easier development of more MotionInput technology in the future, and also benefit individuals who need MotionInpt in their daily lives by making it significantly more convenient and accessible.
@@ -32,7 +32,7 @@ We conducted a series of semi-structured interviews on potential users of the co
     **Answer**: I would like a mobile app for android which can connect to a range of devices and use MotionInput controls to use that device.<br/>
 
     **Question**: Have you tried conventional gaming controls? Do they work with people who have disabilities? <br/>
-    **Answer**: Yes, I have tried other adapted controls, such as Cephable (Cephable, N.D.),  but they don’t have support on all my devices such as smart TVs that I use in my classroom.<br/>
+    **Answer**: Yes, I have tried other adapted controls, such as Cephable (Cephable, N.D.), but they don’t have support on all my devices such as smart TVs that I use in my classroom.<br/>
 
     **Question**: How would you use the controller? <br/>
     **Answer**: I would use the controller in my classroom to play interactive games in which all children can be involved.
@@ -70,7 +70,7 @@ Based on the surveys and personas, these are the conclusions our team came to re
 1. **Diverse Use Cases**: The surveys revealed a variety of use cases for the controller, ranging from controlling smart TVs in classrooms to enabling disabled individuals to play video games without physical controllers. This diversity underscores the importance of creating a versatile and adaptable solution that caters to a wide range of user needs and preferences.
 2. **Documentation and Support**: As mentioned by the occupational therapist, comprehensive documentation and user guides are important aspects to assist users in setting up and using the controller effectively.
 3. **Easy Connectivity**: The requirement for Bluetooth connectivity without the need for additional software installation on target devices highlights the importance of seamless and hassle-free connectivity. Users expect the controller to effortlessly connect to a variety of devices, enhancing convenience and usability.
-4. **Customisability**: Various settings are important to cater towards all types of users with different needs. Accessibility features such as high contrast mode, dark mode, and customizable controls emerged as crucial requirements, alongside many different options for the MotionInput modes and tyypes. These features ensure that the controller is usable and accessible to individuals with diverse abilities and preferences.
+4. **Customisability**: Various settings are important to cater towards all types of users with different needs. Accessibility features such as high contrast mode, dark mode, and customisable controls emerged as crucial requirements, alongside many different options for the MotionInput modes and types. These features ensure that the controller is usable and accessible to individuals with diverse abilities and preferences.
 
 Further conclusions are drawn in the MoSCoW lists at the bottom of the page.
 
@@ -153,7 +153,7 @@ A list of use cases for our app.
 
 ### Functional Requirements List
 
-This list outlines the essential features and functionalities expected in the development of our application. With a focus on accessibility and user customization, the app facilitates various control modes including keyboard, mouse, and joypad, and integration with MotionInput capabilities such as face, eye gaze, and hand movements. Users can toggle between controllers and customize key-binds to suit their preferences through an intuitive settings interface. While prioritizing accessibility with high contrast and dark mode options, the app also should offer potential enhancements like speech input support and automatic Bluetooth reconnection for added convenience.
+This list outlines the essential features and functionalities expected in the development of our application. With a focus on accessibility and user customisation, the app facilitates various control modes including keyboard, mouse, and joypad, and integration with MotionInput capabilities such as face, eye gaze, and hand movements. Users can toggle between controllers and customise key-binds to suit their preferences through an intuitive settings interface. While prioritising accessibility with high contrast and dark mode options, the app also should offer potential enhancements like speech input support and automatic Bluetooth reconnection for added convenience.
 
 <details>
   <summary>Must Have</summary>
@@ -163,7 +163,7 @@ This list outlines the essential features and functionalities expected in the de
         - Bluetooth connection should not require any other software to be installed on the target device.
         - Controller types to be supported:
             - Keyboard controller (sends keyboard presses to device from local app)
-            - Mouse controller (sends mouse movements and left / right clicks to device from local app)
+            - Mouse controller (sends mouse movements and left/right clicks to device from local app)
             - Joypad controller (sends joypad inputs to device from local app)
         - MotionInput Controller types to be supported:
             - Face
@@ -182,7 +182,7 @@ This list outlines the essential features and functionalities expected in the de
             - Dark Mode
             - Light Mode
         - Speech input support to control navigation of the app and to change settings.
-        - Bluetooth controlled speech input to type using the Keyboard.    
+        - Bluetooth controlled speech input to type using the Keyboard.
     </div>
   </div>
 </details>
@@ -191,7 +191,7 @@ This list outlines the essential features and functionalities expected in the de
   <summary>Could Have</summary>
   <div>
     <div>
-    - Ability to add and remove new key-binds for MotionInput mode easily in the settings.
+    - Ability to add and remove new keybinds for MotionInput mode easily in the settings.
     - A setting to automatically reconnect to a bluetooth device after losing connection.
     - Make the device discoverable so the controller can be connected to from another devices.
     </div>
@@ -216,7 +216,7 @@ Our project has a strong accessibility oriented focus, as an app targeted toward
   <div>
     <div>
         - Performance – The application must have fast response times to user inputs, enabling smooth interaction with connected devices.
-        - Reliability - The app should maintain a stable Bluetooth connection with the target device, minimizing interruption during usage.
+        - Reliability - The app should maintain a stable Bluetooth connection with the target device, minimising interruption during usage.
         - Compatibility - Ensure compatibility with a wide range of Android devices, encompassing various screen sizes, resolutions, and hardware specifications.
         - Scalability - The application architecture should support scalability to accommodate future updates without compromising performance or stability.
     </div>
@@ -227,7 +227,7 @@ Our project has a strong accessibility oriented focus, as an app targeted toward
   <summary>Should Have</summary>
   <div>
     <div>
-        - Usability - Prioritize user-friendly interfaces and intuitive controls to enhance the overall user experience, catering to users of all abilities and preferences.
+        - Usability - Prioritise user-friendly interfaces and intuitive controls to enhance the overall user experience, catering to users of all abilities and preferences.
         - Documentation - Provide comprehensive documentation and user guides to assist users in setting up and using the app effectively.
     </div>
   </div>
@@ -238,9 +238,9 @@ Our project has a strong accessibility oriented focus, as an app targeted toward
   <div>
     <div>
         - Internal Functionality - Implement functionality to enable users to interact with the android phone itself through MotionInput, rather than a connected bluetooth device.
-        - Battery Efficiency - Optimize the app such that the power consumption is not excessively high, allowing for longer use of the application.
+        - Battery Efficiency - Optimise the app such that the power consumption is not excessively high, allowing for longer use of the application.
         - Feedback Mechanisms - Incorporate user surveys or in-app feedback forms to gather user input and improve the application based on user suggestions.
-        - Localization - Support multiple languages in order to enable broader accessibility across different regions and communities.
+        - Localisation - Support multiple languages in order to enable broader accessibility across different regions and communities.
     </div>
   </div>
 </details>

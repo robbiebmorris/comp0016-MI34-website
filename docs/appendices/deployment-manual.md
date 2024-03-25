@@ -2,9 +2,9 @@
 
 ---
 
-MotionInput Bluetooth controller has been built in Android Studio and written in Java. You will need an android device running AndroidOS Minimim 11 to install the controller on your device or alternitively you can use the built in Android Studio emulator.
+MotionInput Bluetooth controller has been built in Android Studio and written in Java. You will need an Android device running AndroidOS Minimum 11 to install the controller on your device or alternitively you can use the built in Android Studio emulator.
 
-**Note: The Andoid Studio emulator doesn't have any Bluetooth or Camera functionailty, therefore the main features of the app are limited to physical devices.**
+**Note: The Andoid Studio emulator doesn't have any Bluetooth or Camera functionality, therefore the main features of the app are limited to physical devices.**
 
 ## Prerequisites
 
@@ -58,7 +58,7 @@ File > Sync Project with Gradle Files
 Build > Rebuild Project
 ```
 
-After a successfull Gradle Sync Android Studio is setup and ready to run.
+After a successful Gradle Sync Android Studio is setup and ready to run.
 
 ## Setup Android Device (Only if not using Emulator)
 
@@ -77,7 +77,7 @@ You need to put your Android Device in developer mode in order to build apps dir
 2. Tap the Build Number option seven times until you see the message ```You are now a developer!``` This enables developer options on your device.
 3. Return to the previous screen to find Developer options at the bottom.
 
-Before you can use the debugger and other tools, you need to enable USB debugging, which allows Android Studio and other SDK tools to recognize your device when connected via USB.
+Before you can use the debugger and other tools, you need to enable USB debugging, which allows Android Studio and other SDK tools to recognise your device when connected via USB.
 
 Enable USB debugging in the device system settings under Developer options. You can find this option for Android 9 (API level 28) and higher: 
 

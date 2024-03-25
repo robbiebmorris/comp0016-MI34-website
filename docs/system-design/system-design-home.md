@@ -9,7 +9,7 @@ System Architecture Diagram
 <div class="img-center"> ![High-level System Architecture](../../static/img/sys-design/system-architecture.png) </div>
 
 
-The MotionInput Bluetooth controller comprises both front-end and back-end components. The front-end components handle user interface presentation and user interactions within the application. The application is structured around a single activity, utilizing fragments as defined UI components and a fragment manager to dynamically switch between various UI displays based on user selections. XML layouts are employed in constructing the front-end to specify the structure and appearance of UI elements.
+The MotionInput Bluetooth controller comprises both front-end and back-end components. The front-end components handle user interface presentation and user interactions within the application. The application is structured around a single activity, utilising fragments as defined UI components and a fragment manager to dynamically switch between various UI displays based on user selections. XML layouts are employed in constructing the front-end to specify the structure and appearance of UI elements.
 
 The back-end systems deal with the Bluetooth connection related logic and use Android APIs to deal with the interactions the user makes with the UI elements of the app. The back-end also communicates with the devices system preferences to save the users presets and local data.
 
@@ -19,7 +19,7 @@ The diagram above provides a more comprehensive overview of the system architect
 
 At a very high level, the back-end components related to Bluetooth connectivity are also shown, in an attempt to show the flow of operations for establishing Bluetooth connectivity with target devices. The Bluetooth section shows the flow of establishing a Bluetooth connection with a target device. The system will either reconnect to a stored device using autoreconnect or scan for new devices using the Discovery component, which adds found devices to the Target Device Storage. In reality, the system is significantly more complicated than this and there are many dependencies on different bluetooth components, but this abstracted view will help you understand what the program ends up doing.
 
-The Bluetooth Main component is the central controller for Bluetooth operations, managing the connection process with the help of other components like Bluetooth Manager" and HID (Human Interface Device). The connection is facilitated through the "Bluetooth Manager" component, which utilizes the stored device information from the Target Device Storage. Our design emphasises separation of concerns between the front-end UI components, the back-end Bluetooth components, and MotionInput components.
+The Bluetooth Main component is the central controller for Bluetooth operations, managing the connection process with the help of other components like Bluetooth Manager" and HID (Human Interface Device). The connection is facilitated through the "Bluetooth Manager" component, which utilises the stored device information from the Target Device Storage. Our design emphasises separation of concerns between the front-end UI components, the back-end Bluetooth components, and MotionInput components.
 
 <div class="img-center"> ![High-level System Architecture](../../static/img/sys-design/permissions.png) </div>
 
@@ -32,8 +32,8 @@ Here is a list of design patterns which we employed to make our application.
 
 |Design Pattern| Use|
 |--------------|-----|
-|Singleton Pattern| The BluetoothManager class follows the Singleton design pattern, ensuring that only a single instance of the BluetoothMain class is created throughout the codebase. This pattern is useful when you need to control object creation and have a single, centralized point of access to an instance of a class.
-|Observer Pattern|The Discovery class utilizes the Observer pattern to notify interested parties (e.g., UI fragments) when new Bluetooth devices are found during the scanning process. This pattern promotes loose coupling between the subject (Discovery) and observers (UI fragments).|
+|Singleton Pattern| The BluetoothManager class follows the Singleton design pattern, ensuring that only a single instance of the BluetoothMain class is created throughout the codebase. This pattern is useful when you need to control object creation and have a single, centralised point of access to an instance of a class.
+|Observer Pattern|The Discovery class utilises the Observer pattern to notify interested parties (e.g., UI fragments) when new Bluetooth devices are found during the scanning process. This pattern promotes loose coupling between the subject (Discovery) and observers (UI fragments).|
 |Strategy Pattern| The various settings classes (GamePadSettings, MouseSettings, KeyboardSettings) implement different strategies for handling settings-related operations. This pattern allow the application to switch between different strategies at runtime, promoting flexibility and extensibility.|
 |Template Method Pattern|Used for implementing each of the respective controllers (Mouse, Keyboard, and Gamepad), preventing the developers (us) from unnecessarily rewriting code.|
 |Chain of Responsibility pattern| The bluetooth services is setup to process devices in using a chain of responsibility, allowing each bluetooth class to have a clear defined purpose.|
