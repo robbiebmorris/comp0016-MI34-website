@@ -1,5 +1,7 @@
 # Website
 
+The final version of the website can be found at https://students.cs.ucl.ac.uk/2023/group23/.
+
 This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
 ### Installation
